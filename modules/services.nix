@@ -36,12 +36,9 @@
 
   #### VIRTUALISATION ####
   virtualisation.docker.enable = true;
-  virtualisation.libvirtd.enable = true;   # libvirt daemon
 
   #### SSH ####
   services.openssh.enable = true;
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mariadb;
   #### PRINTING ####
   services.printing = {
     enable = true;
