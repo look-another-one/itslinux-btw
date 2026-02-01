@@ -9,3 +9,5 @@ config/*
 !config/kitty/
 !config/ghostty/
 !config/fastfetch/
+!config/starship/
+
