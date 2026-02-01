@@ -20,10 +20,10 @@ alias burn="./.Scripts/ISO_Burn/burn.sh"
 # -----------------------------------------------------
 # Git
 # -----------------------------------------------------
-alias status='git status'
+alias sts='git status'
 alias push='git push'
 alias pull='git pull'
-alias commit='git commit -m'
+alias cm='git commit -m'
 alias add='git add'
 
 
