@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
-    ./modules/services.nix
-    ./modules/sddm.nix
-    ./modules/vm.nix
+    ../nix/hardware-configuration.nix
+    ../modules/services.nix
+    ../modules/sddm.nix
+    ../modules/vm.nix
   ];
 
   #### BOOT ####
@@ -34,10 +34,10 @@
   nixpkgs.config.allowUnfree = true;
 
   #### PACKAGES ####
-  environment.systemPackages = import ./modules/packages.nix { inherit pkgs; };
+  environment.systemPackages = import ../modules/packages.nix { inherit pkgs; };
 
   environment.sessionVariables = {
-   XDG_CONFIG_HOME = "$HOME/.dotfiles/config";
+    XDG_CONFIG_HOME = "$HOME/.dotfiles/config";
   };
 
 

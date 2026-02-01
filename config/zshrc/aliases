@@ -1,0 +1,34 @@
+
+# -----------------------------------------------------
+# General
+# -----------------------------------------------------
+alias c='clear'
+alias cat='bat'
+alias fl='fastfetch'
+alias ff='fastfetch --logo None'
+alias shutdown='systemctl poweroff'
+alias v='$EDITOR'
+alias ttc='tty-clock -s -c -C 4'
+
+# -----------------------------------------------------
+# Scripts
+# -----------------------------------------------------
+
+alias burn="./.Scripts/ISO_Burn/burn.sh"
+
+
+# -----------------------------------------------------
+# Git
+# -----------------------------------------------------
+alias status='git status'
+alias push='git push'
+alias pull='git pull'
+alias commit='git commit -m'
+alias add='git add'
+
+
+# -----------------------------------------------------
+# System
+# -----------------------------------------------------
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+

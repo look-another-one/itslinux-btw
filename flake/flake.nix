@@ -8,7 +8,7 @@
   outputs = { self, nixpkgs, ... }: {
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
       modules = [
-        ./configuration.nix
+        ../nix/configuration.nix
       ];
     };
   };
