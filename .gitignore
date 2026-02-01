@@ -6,3 +6,6 @@ config/*
 !config/niri/
 !config/rofi/
 !config/zshrc/
+!config/kitty/
+!config/ghostty/
+!config/fastfetch/
