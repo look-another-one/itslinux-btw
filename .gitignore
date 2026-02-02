@@ -10,5 +10,6 @@ config/*
 !config/ghostty/
 !config/fastfetch/
 !config/starship/
-!config/yazi/flavors/
-!config/yazi/flavors/tokyo-night.yazi
+!config/yazi/
+!config/vesktop/settings
+!config/vesktop/themes
