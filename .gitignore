@@ -10,5 +10,5 @@ config/*
 !config/ghostty/
 !config/fastfetch/
 !config/starship/
-!config/yazi/*
-
+!config/yazi/flavors/
+!config/yazi/flavors/tokyo-night.yazi
