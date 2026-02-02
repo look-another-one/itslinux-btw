@@ -11,3 +11,4 @@ config/*
 !config/fastfetch/
 !config/starship/
 !config/yazi/
+!config/nvim
