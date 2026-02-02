@@ -11,5 +11,3 @@ config/*
 !config/fastfetch/
 !config/starship/
 !config/yazi/
-!config/vesktop/settings
-!config/vesktop/themes
