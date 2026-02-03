@@ -12,8 +12,5 @@ config/*
 !config/starship/
 !config/yazi/
 !config/nvim
-!config/vesktop/
-config/vesktop/Crashpad
-config/vesktop/sessionData
-config/vesktop/settings.json
+
 
