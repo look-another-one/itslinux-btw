@@ -9,6 +9,7 @@ alias ff='fastfetch --logo None'
 alias shutdown='systemctl poweroff'
 alias v='$EDITOR'
 alias ttc='tty-clock -s -c -C 4'
+alias btw='echo "i use nixos btw"'
 # -----------------------------------------------------
 # Scripts
 # -----------------------------------------------------
