@@ -35,9 +35,6 @@
   #### PACKAGES ####
   environment.systemPackages = import ../modules/packages.nix { inherit pkgs; };
 
-  environment.sessionVariables = {
-    XDG_CONFIG_HOME = "$HOME/.dotfiles/config";
-  };
 
 
   #### VERSION ####

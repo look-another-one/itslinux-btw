@@ -56,4 +56,5 @@ with pkgs; [
     openjdk21
     appimage-run
     distrobox
+    nushell
 ]
