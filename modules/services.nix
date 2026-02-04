@@ -34,8 +34,6 @@
     pulse.enable = true;
   };
 
-  #### VIRTUALISATION ####
-  virtualisation.docker.enable = true;
 
   #### SSH ####
   services.openssh.enable = true;

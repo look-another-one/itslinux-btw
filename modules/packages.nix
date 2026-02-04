@@ -4,57 +4,22 @@ with pkgs; [
     neovim 
     wget
     git
-    kitty
+    zsh
     ghostty
-    vscodium
     rofi
     niri
     xwayland-satellite
-    kdePackages.breeze
-    kdePackages.dolphin
     yazi
-    zsh
-    lazygit
-    emacs
-    fzf
     swaylock-effects
-    mpvpaper
-    starship
-    eza
-    zoxide
-    keyd
-    bat
-    mpv
-    tty-clock
     flatpak
-    btop
     fastfetch
-    cava
     vesktop
     python3
-    docker-compose
-    lazydocker
     jetbrains-mono
-    qpwgraph
-    qt6.qtsvg
-    qt6.qtvirtualkeyboard
-    qt6.qtmultimedia
-    localsend
-    obs-studio
-    cliphist
-    wl-clipboard
-    adwaita-icon-theme
-    conda
-    android-tools
-    dysk
     swww
-    keepassxc
     swaynotificationcenter
-    nordzy-icon-theme
-    nautilus
-    scrcpy
-    openjdk21
-    appimage-run
-    distrobox
     nushell
+    eza
+    obs-studio
+    mpv
 ]
