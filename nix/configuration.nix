@@ -5,7 +5,6 @@
     ../nix/hardware-configuration.nix
     ../modules/services.nix
     ../modules/sddm.nix
-    ../modules/vm.nix
   ];
 
   #### BOOT ####
