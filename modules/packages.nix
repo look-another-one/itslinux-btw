@@ -26,4 +26,5 @@ with pkgs; [
     tty-clock
     uv
     python3
+    android-tools
 ]
