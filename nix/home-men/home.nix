@@ -12,7 +12,6 @@
     "swaylock".source = ../../config/swaylock;
     "swaynotificationcenter".source   = ../../config/swaync;
     "cava".source = ../../config/cava;
-    "ghostty".source = ../../config/ghostty;
     "niri".source = ../../config/niri;
     "starship".source = ../../config/starship;
     "fastfetch".source = ../../config/fastfetch;

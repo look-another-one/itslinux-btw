@@ -24,4 +24,5 @@ with pkgs; [
     cava
     kitty
     tty-clock
+    uv
 ]
