@@ -27,4 +27,5 @@ with pkgs; [
     uv
     python3
     android-tools
+    keepassxc
 ]
