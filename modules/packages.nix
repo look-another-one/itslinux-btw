@@ -5,7 +5,6 @@ with pkgs; [
     wget
     git
     zsh
-    ghostty
     rofi
     niri
     xwayland-satellite
@@ -24,4 +23,5 @@ with pkgs; [
     mpv
     cava
     kitty
+    tty-clock
 ]
