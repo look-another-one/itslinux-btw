@@ -74,7 +74,7 @@ environment {
   XDG_CURRENT_DESKTOP "niri"
   QT_QPA_PLATFORM "wayland"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
-  TERMINAL "ghostty"
+  TERMINAL "kitty"
 }
 cursor {
     xcursor-theme "cursor"
@@ -177,7 +177,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+N { spawn-sh "swaync-client -t"; }
     // === Application Launchers ===
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "rofi" "-show" "drun";
     }

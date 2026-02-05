@@ -23,5 +23,5 @@ with pkgs; [
     obs-studio
     mpv
     cava
-    kdePackages.qtmultimedia
+    kitty
 ]
