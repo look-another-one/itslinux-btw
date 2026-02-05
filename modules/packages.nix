@@ -25,4 +25,5 @@ with pkgs; [
     kitty
     tty-clock
     uv
+    python3
 ]
