@@ -22,4 +22,6 @@ with pkgs; [
     eza
     obs-studio
     mpv
+    cava
+    kdePackages.qtmultimedia
 ]
