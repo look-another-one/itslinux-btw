@@ -49,5 +49,11 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+#  virtualisation.virtualbox.host.enableExtensionPack = true;
+
+#  users.users.yousaytoday.extraGroups = [ "vboxusers" ];
+
+
 }
 

@@ -28,4 +28,6 @@ with pkgs; [
     python3
     android-tools
     keepassxc
+    appimage-run
+    jdk21
 ]
