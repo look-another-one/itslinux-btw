@@ -30,4 +30,6 @@ with pkgs; [
     keepassxc
     appimage-run
     jdk21
+    conda
+    vscodium
 ]
