@@ -66,6 +66,7 @@ overview {
         off
     }
 }
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "swaync"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww-daemon" "-n" "workspace"

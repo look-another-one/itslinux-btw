@@ -32,4 +32,7 @@ with pkgs; [
     jdk21
     conda
     vscodium
+    scrcpy
+    waybar
+    noctalia-shell
 ]
