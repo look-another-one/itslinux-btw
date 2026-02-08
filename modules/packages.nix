@@ -36,4 +36,6 @@ with pkgs; [
     waybar
     noctalia-shell
     localsend
+    lazygit
+    btop
 ]
