@@ -27,7 +27,8 @@
   #### NIX ####
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-
+  boot.kernelModules = [ "v4l2loopback" ];
+  boot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
   #### PACKAGES ####
   environment.systemPackages = import ../../modules/packages.nix { inherit pkgs; };
 

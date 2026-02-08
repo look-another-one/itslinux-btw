@@ -38,4 +38,6 @@ with pkgs; [
     localsend
     lazygit
     btop
+    bat
+    v4l-utils
 ]
