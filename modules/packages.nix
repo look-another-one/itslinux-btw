@@ -35,4 +35,5 @@ with pkgs; [
     scrcpy
     waybar
     noctalia-shell
+    localsend
 ]
