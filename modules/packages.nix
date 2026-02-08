@@ -34,7 +34,6 @@ with pkgs; [
     vscodium
     scrcpy
     waybar
-    noctalia-shell
     localsend
     lazygit
     btop
