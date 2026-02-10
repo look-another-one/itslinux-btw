@@ -208,7 +208,6 @@ binds {
     // === Application Shortcuts ===
     //Mod+B {spwan "zen-browser";}
     //Mod+Z {spwan "nautilus";}
-    //Mod+X {spwan "codium";}
     // Mod+E {spwan "librewolf";}
 
 
