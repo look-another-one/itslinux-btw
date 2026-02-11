@@ -42,5 +42,10 @@ with pkgs; [
     logseq
     qt6.qtwayland
     quickshell
+    kdePackages.dolphin
+    unzip
+    javaPackages.openjfx21
+    dysk
+    brave
 ]
 

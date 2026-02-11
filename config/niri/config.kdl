@@ -184,6 +184,7 @@ binds {
     }
     //Mod+V { spawn "nwg-clipman";}
     Mod+alt+L { spawn-sh "swaylock";}
+    Mod+X { spawn-sh "codium"; } 
     // === Security ===
     Mod+Shift+E { quit; }
     Mod+Shift+P {spawn "wlogout";}
