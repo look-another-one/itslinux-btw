@@ -44,7 +44,6 @@ with pkgs; [
     quickshell
     kdePackages.dolphin
     unzip
-    javaPackages.openjfx21
     dysk
     brave
 ]

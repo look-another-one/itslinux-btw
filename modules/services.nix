@@ -1,5 +1,7 @@
 { config, pkgs, inputs, ... }:
 
+
+
 {
   #### NETWORKING ####
   networking.networkmanager.enable = true;
@@ -46,8 +48,8 @@
       brlaser
     ];
   };
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+#  services.displayManager.sddm.enable = true;
+#  services.displayManager.sddm.wayland.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
 #  virtualisation.virtualbox.host.enableExtensionPack = true;

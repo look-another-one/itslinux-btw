@@ -10,7 +10,6 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }: { 
-    # 1. Added 'silentSDDM' to the arguments above
     
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
       
