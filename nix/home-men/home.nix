@@ -7,14 +7,14 @@
 
   
   xdg.configFile = {
-    "neovim".source     = ../../config/nvim;
-    "rofi".source     = ../../config/rofi;
-    "swaylock".source = ../../config/swaylock;
-    "swaynotificationcenter".source   = ../../config/swaync;
-    "cava".source = ../../config/cava;
-    "niri".source = ../../config/niri;
-    "starship".source = ../../config/starship;
-    "fastfetch".source = ../../config/fastfetch;
+    "neovim".source     = ../../config/configfiles/nvim;
+    "rofi".source     = ../../config/configfiles/rofi;
+    "swaylock".source = ../../config/configfiles/swaylock;
+    "swaynotificationcenter".source   = ../../config/configfiles/swaync;
+    "cava".source = ../../config/configfiles/cava;
+    "niri".source = ../../config/configfiles/niri;
+    "starship".source = ../../config/configfiles/starship;
+    "fastfetch".source = ../../config/configfiles/fastfetch;
    };
 
 }

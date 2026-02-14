@@ -26,6 +26,7 @@ input {
     variable-refresh-rate
 }
 layout {
+    gaps 8
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
@@ -125,7 +126,7 @@ window-rule {
 window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false
-    geometry-corner-radius 12
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 window-rule {
