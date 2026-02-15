@@ -48,14 +48,11 @@
       brlaser
     ];
   };
-#  services.displayManager.sddm.enable = true;
-#  services.displayManager.sddm.wayland.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
-#  virtualisation.virtualbox.host.enableExtensionPack = true;
 
-#  users.users.yousaytoday.extraGroups = [ "vboxusers" ];
-
-
+  # KDE Plasma6
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm.enable = true;
 }
 

@@ -158,7 +158,7 @@ window-rule {
     open-floating true
 }
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 // Block out password managers from screencasts.
