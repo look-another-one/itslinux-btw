@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/services.nix
-#    ../../modules/sddm.nix
+    ../../modules/sddm.nix
   ];
 
   #### BOOT ####

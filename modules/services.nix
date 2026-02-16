@@ -51,8 +51,11 @@
 
   virtualisation.virtualbox.host.enable = true;
 
-  # KDE Plasma6
-  services.desktopManager.plasma6.enable = true;
-  services.displayManager.sddm.enable = true;
+  programs.hyprland = {
+   enable = true;
+   # Recommended: use UWSM (Universal Wayland Session Manager)
+   withUWSM = true;
+  };
+
 }
 

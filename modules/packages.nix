@@ -39,12 +39,11 @@ with pkgs; [
     btop
     bat
     v4l-utils
-    logseq
     qt6.qtwayland
     quickshell
-    kdePackages.dolphin
     unzip
     dysk
     brave
+    antigravity
 ]
 

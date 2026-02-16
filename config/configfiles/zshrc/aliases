@@ -32,4 +32,5 @@ alias add='git add'
 # System
 # -----------------------------------------------------
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias nix-sw='sudo nixos-rebuild switch --flake ~/itslinux-btw/nix/flake'
 
