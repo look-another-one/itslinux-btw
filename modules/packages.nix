@@ -44,6 +44,11 @@ with pkgs; [
     unzip
     dysk
     brave
-    antigravity
+    gimp
+    warp-terminal
+    tmux
+    code-cursor
+    lazydocker
+    glib
 ]
 
