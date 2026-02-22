@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "f023e7b4-79d7-30f4-9cd5-3c96d679824f",
+    "name": "lookanotherone",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

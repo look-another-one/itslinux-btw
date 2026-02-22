@@ -1,1 +1,1 @@
-java -jar fabric-server.jar --nogui
+java -jar fabric-server.jar 
