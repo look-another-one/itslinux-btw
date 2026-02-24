@@ -1,5 +1,5 @@
-[16:56:23] [main/INFO]: Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
-[16:56:24] [main/INFO]: Loading 115 mods:
+[12:24:52] [main/INFO]: Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
+[12:24:53] [main/INFO]: Loading 116 mods:
 	- almanac 1.6.2
 	   \-- cloth-config 20.0.149
 	        \-- cloth-basic-math 0.6.1
@@ -119,102 +119,79 @@
 	   |-- silk-nbt 1.11.5
 	   |-- silk-network 1.11.5
 	   \-- silk-persistence 1.11.5
+	- trade_cycling 1.21.11-1.0.20
+	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f53
+	   \-- fabric-screen-api-v1 3.1.7+4ebb5c0853
 	- treeharvester 9.3
 	- veinminer 2.5.2
 	   |-- de_miraculixx_core_dev 2.5.2
 	   \-- fabric-permissions-api-v0 0.6.1
-[16:56:24] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/yousaytoday/itslinux-btw/assets/minecraft/server-1.21.11-fabric/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[16:56:24] [main/INFO]: Compatibility level set to JAVA_21
-[16:56:25] [main/INFO]: Loaded optimizations overrides for Potatoptimize: 1 override(s) found
-[16:56:25] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.EntityTickingListAccessor' as 'Potatoptimize' disables it
-[16:56:25] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.ServerLevelMixin' as 'Potatoptimize' disables it
-[16:56:25] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.TickThresholdAccessor' as 'Potatoptimize' disables it
-[16:56:25] [main/WARN]: Error loading class: net/minecraft/class_2539$class_4532 (java.lang.ClassNotFoundException: net/minecraft/class_2539$class_4532)
-[16:56:25] [main/WARN]: @Mixin target net/minecraft/class_2539$class_4532 was not found raknetify-fabric.mixins.json:access.INetworkStateInternalPacketHandler from mod raknetify
-[16:56:25] [main/WARN]: Error loading class: net/minecraft/class_9188 (java.lang.ClassNotFoundException: net/minecraft/class_9188)
-[16:56:25] [main/WARN]: Error loading class: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon (java.lang.ClassNotFoundException: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon)
-[16:56:25] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[16:56:26] [main/WARN]: Did not find udev library in operating system. Some features may not work.
-[16:56:34] [main/INFO]: Almanac Fabric config reloaded, cache cleared
-[16:56:34] [main/INFO]: Almanac Fabric config initialized
-[16:56:34] [main/INFO]: Almanac initialized
-[16:56:34] [main/INFO]: Loading Collective version 8.13.
-[16:56:34] [main/INFO]: FabricPluginMessaging initialized!
-[16:56:34] [main/INFO]: [STDOUT]: Raknetify: Using leak detector level SIMPLE
-[16:56:35] [main/INFO]: Initializing Silk
-[16:56:35] [main/INFO]: Veinminer Version: 2.5.2 (fabric)
-[16:56:35] [main/INFO]: Registered 'on_load' hooks
-[16:56:35] [main/INFO]: Successfully loaded HuskHomes v4.10
-[16:56:35] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[16:56:36] [main/WARN]: Missing data pack silkiertouch
-[16:56:36] [main/INFO]: Found new data pack mine-spawners, loading it automatically
-[16:56:36] [DefaultDispatcher-worker-3/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
-[16:56:38] [main/INFO]: Loaded 1470 recipes
-[16:56:38] [main/INFO]: Loaded 1584 advancements
-[16:56:38] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 1.838 ms
-[16:56:39] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
-[16:56:39] [Server thread/INFO]: Registered 'on_enable' hooks
-[16:56:39] [Server thread/INFO]: Successfully enabled HuskHomes v4.10
-[16:56:39] [HuskHomes-ThreadPool/INFO]: Registered 'after_load' hooks
-[16:56:39] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[16:56:39] [Server thread/INFO]: Loading properties
-[16:56:39] [Server thread/INFO]: Default game type: SURVIVAL
-[16:56:39] [Server thread/INFO]: Generating keypair
-[16:56:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.18.0.1
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.17.0.1
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.19.0.1
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.56.1
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:d2b5:d4ef:3e58:6fd4%enp2s0
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:eb9f:cfd:b45f:26f5%enp2s0
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:44ad:7f67:fae4:7cee%enp2s0
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.1.8
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /0:0:0:0:0:0:0:1%lo
-[16:56:39] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /127.0.0.1
-[16:56:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:56:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:56:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:56:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:56:39] [Server thread/INFO]: Preparing level "world"
-[16:56:40] [Server thread/INFO]: Loading 25 persistent chunks...
-[16:56:40] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:40] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:41] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:41] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:42] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:42] [Server thread/INFO]: Preparing spawn area: 28%
-[16:56:43] [Server thread/INFO]: Time elapsed: 2645 ms
-[16:56:43] [Server thread/INFO]: Done (3.252s)! For help, type "help"
-[16:57:05] [Netty Epoll IO #2/WARN]: @Redirect conflict. Skipping raknetify-fabric.mixins.json:server.MixinServerLoginNetworkHandler from mod raknetify->@Redirect::stopCompressionIfStreamingCompressionExists(Lnet/minecraft/server/MinecraftServer;)I with priority 900, already redirected by fabric-networking-api-v1.mixins.json:ServerLoginPacketListenerImplMixin from mod fabric-networking-api-v1->@Redirect::removeLateCompressionPacketSending(Lnet/minecraft/server/MinecraftServer;)I with priority 1000
-[16:57:06] [Server thread/INFO]: lookanotherone[/192.168.1.8:45174] logged in with entity id 42 at (-6.7258336376026016, 66.0, -0.3736275504929589)
-[16:57:06] [Server thread/INFO]: lookanotherone joined the game
-[16:57:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2001ms or 40 ticks behind
-[16:58:16] [Server thread/INFO]: [lookanotherone: Set own game mode to Creative Mode]
-[16:58:28] [Server thread/INFO]: [lookanotherone: Set own game mode to Survival Mode]
-[16:58:52] [Server thread/INFO]: [lookanotherone: Set own game mode to Creative Mode]
-[16:59:04] [Server thread/INFO]: [lookanotherone: Set own game mode to Survival Mode]
-[17:02:20] [Server thread/INFO]: lookanotherone lost connection: Disconnected
-[17:02:20] [Server thread/INFO]: lookanotherone left the game
-[17:03:20] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[17:05:27] [Server thread/INFO]: lookanotherone[/192.168.1.7:63348] logged in with entity id 1412 at (39957.249648755664, 88.0, 39962.57696941878)
-[17:05:27] [Server thread/INFO]: lookanotherone joined the game
-[17:06:34] [Server thread/INFO]: Locating element minecraft:village_plains took 1216 ms
-[17:06:43] [Server thread/INFO]: lookanotherone was killed
-[17:06:43] [Server thread/INFO]: [lookanotherone: Killed lookanotherone]
-[17:07:10] [Server thread/INFO]: lookanotherone was killed
-[17:07:10] [Server thread/INFO]: [lookanotherone: Killed lookanotherone]
-[17:07:17] [Server thread/INFO]: Locating element minecraft:village_plains took 1014 ms
-[17:07:31] [Server thread/INFO]: [lookanotherone: Teleported lookanotherone to -1259.500000, 100.000000, 272.500000]
-[17:07:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3230ms or 64 ticks behind
-[17:07:34] [Server thread/WARN]: lookanotherone moved too quickly! 0.0,-10.188594643186804,0.0
-[17:07:44] [Server thread/INFO]: lookanotherone was slain by Iron Golem
-[17:08:06] [Server thread/INFO]: lookanotherone was slain by Iron Golem
-[17:11:27] [Netty Epoll IO #4/INFO]: [STDERR]: /192.168.1.7:63348 PLAY io.netty.handler.timeout.ReadTimeoutException
-[17:11:27] [Server thread/INFO]: lookanotherone lost connection: Timed out
-[17:11:27] [Server thread/INFO]: lookanotherone left the game
-[17:11:53] [Server thread/INFO]: lookanotherone[/192.168.1.7:63372] logged in with entity id 4396 at (-1313.8115092674282, 64.0, 300.5354926723187)
-[17:11:53] [Server thread/INFO]: lookanotherone joined the game
-[17:14:05] [Server thread/INFO]: lookanotherone was blown up by Creeper
-[17:14:19] [Server thread/INFO]: lookanotherone lost connection: Disconnected
-[17:14:19] [Server thread/INFO]: lookanotherone left the game
-[17:15:19] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[12:24:53] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/yousaytoday/itslinux-btw/assets/minecraft/server-1.21.11-fabric/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[12:24:53] [main/INFO]: Compatibility level set to JAVA_21
+[12:24:53] [main/INFO]: Loaded optimizations overrides for Potatoptimize: 1 override(s) found
+[12:24:54] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.EntityTickingListAccessor' as 'Potatoptimize' disables it
+[12:24:54] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.ServerLevelMixin' as 'Potatoptimize' disables it
+[12:24:54] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.TickThresholdAccessor' as 'Potatoptimize' disables it
+[12:24:54] [main/WARN]: Error loading class: net/minecraft/class_2539$class_4532 (java.lang.ClassNotFoundException: net/minecraft/class_2539$class_4532)
+[12:24:54] [main/WARN]: @Mixin target net/minecraft/class_2539$class_4532 was not found raknetify-fabric.mixins.json:access.INetworkStateInternalPacketHandler from mod raknetify
+[12:24:54] [main/WARN]: Error loading class: net/minecraft/class_9188 (java.lang.ClassNotFoundException: net/minecraft/class_9188)
+[12:24:54] [main/WARN]: Error loading class: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon (java.lang.ClassNotFoundException: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon)
+[12:24:54] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[12:24:55] [main/WARN]: Did not find udev library in operating system. Some features may not work.
+[12:25:05] [main/INFO]: Almanac Fabric config reloaded, cache cleared
+[12:25:05] [main/INFO]: Almanac Fabric config initialized
+[12:25:05] [main/INFO]: Almanac initialized
+[12:25:05] [main/INFO]: Loading Collective version 8.13.
+[12:25:05] [main/INFO]: FabricPluginMessaging initialized!
+[12:25:06] [main/INFO]: [STDOUT]: Raknetify: Using leak detector level SIMPLE
+[12:25:06] [main/INFO]: Initializing Silk
+[12:25:06] [main/INFO]: Veinminer Version: 2.5.2 (fabric)
+[12:25:07] [main/INFO]: Registered 'on_load' hooks
+[12:25:07] [main/INFO]: Successfully loaded HuskHomes v4.10
+[12:25:07] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[12:25:08] [DefaultDispatcher-worker-1/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
+[12:25:10] [main/INFO]: Loaded 1470 recipes
+[12:25:10] [main/INFO]: Loaded 1584 advancements
+[12:25:10] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 2.305 ms
+[12:25:11] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
+[12:25:12] [Server thread/INFO]: Registered 'on_enable' hooks
+[12:25:12] [Server thread/INFO]: Successfully enabled HuskHomes v4.10
+[12:25:12] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[12:25:12] [HuskHomes-ThreadPool/INFO]: Registered 'after_load' hooks
+[12:25:12] [Server thread/INFO]: Loading properties
+[12:25:12] [Server thread/INFO]: Default game type: SURVIVAL
+[12:25:12] [Server thread/INFO]: Generating keypair
+[12:25:12] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.17.0.1
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.19.0.1
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.18.0.1
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.56.1
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:44ad:7f67:fae4:7cee%enp2s0
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:d2b5:d4ef:3e58:6fd4%enp2s0
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:60d9:440d:19d4:ec86%enp2s0
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.1.8
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /0:0:0:0:0:0:0:1%lo
+[12:25:12] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /127.0.0.1
+[12:25:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:25:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:25:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:25:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:25:12] [Server thread/INFO]: Preparing level "world"
+[12:25:13] [Server thread/INFO]: Loading 0 persistent chunks...
+[12:25:13] [Server thread/INFO]: Preparing spawn area: 100%
+[12:25:13] [Server thread/INFO]: Time elapsed: 137 ms
+[12:25:13] [Server thread/INFO]: Done (1.151s)! For help, type "help"
+[12:26:13] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[12:34:24] [Server thread/INFO]: Stopping the server
+[12:34:24] [Server thread/INFO]: Disabling HuskHomes v4.10...
+[12:34:24] [Server thread/INFO]: Successfully disabled HuskHomes v4.10
+[12:34:24] [Server thread/INFO]: Stopping server
+[12:34:24] [Server thread/INFO]: Saving players
+[12:34:24] [Server thread/INFO]: Saving worlds
+[12:34:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[12:34:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[12:34:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[12:34:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:34:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:34:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:34:24] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

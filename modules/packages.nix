@@ -50,5 +50,6 @@ with pkgs; [
     code-cursor
     lazydocker
     glib
+    nodejs
 ]
 
