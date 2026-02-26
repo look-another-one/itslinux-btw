@@ -56,6 +56,6 @@ with pkgs; [
     hunspellDicts.en_US # Example for English US
     nautilus
     ungoogled-chromium
-
+    logseq
 ]
 
