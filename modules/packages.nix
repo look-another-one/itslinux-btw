@@ -51,5 +51,11 @@ with pkgs; [
     lazydocker
     glib
     nodejs
+    libreoffice-fresh
+    hunspell
+    hunspellDicts.en_US # Example for English US
+    nautilus
+    ungoogled-chromium
+
 ]
 

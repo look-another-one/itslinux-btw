@@ -20,6 +20,8 @@
   programs.zsh.enable = true;
   programs.firefox.enable = true;
 
+  services.gvfs.enable = true;
+
 
   #### INPUT ####
   services.keyd.enable = true;
