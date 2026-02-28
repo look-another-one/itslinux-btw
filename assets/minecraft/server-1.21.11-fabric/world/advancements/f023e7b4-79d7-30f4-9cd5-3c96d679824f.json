@@ -16,6 +16,7 @@
       "minecraft:snowy_plains": "2026-02-23 21:37:44 +0500",
       "minecraft:dripstone_caves": "2026-02-23 15:46:13 +0500",
       "minecraft:snowy_taiga": "2026-02-24 14:41:49 +0500",
+      "minecraft:deep_cold_ocean": "2026-02-27 21:45:29 +0500",
       "minecraft:frozen_river": "2026-02-23 21:37:56 +0500",
       "minecraft:jungle": "2026-02-23 21:23:19 +0500",
       "minecraft:swamp": "2026-02-23 21:12:20 +0500",
@@ -60,16 +61,17 @@
     "criteria": {
       "cooked_porkchop": "2026-02-23 19:23:07 +0500",
       "mutton": "2026-02-23 19:29:49 +0500",
-      "apple": "2026-02-23 15:53:59 +0500",
       "bread": "2026-02-23 15:46:23 +0500",
       "golden_apple": "2026-02-25 12:41:48 +0500",
-      "cooked_chicken": "2026-02-23 20:18:00 +0500",
       "rotten_flesh": "2026-02-23 16:43:41 +0500",
       "cooked_mutton": "2026-02-23 19:34:50 +0500",
-      "potato": "2026-02-23 15:47:21 +0500",
       "cooked_beef": "2026-02-24 14:48:00 +0500",
       "baked_potato": "2026-02-23 20:18:22 +0500",
-      "porkchop": "2026-02-23 16:22:39 +0500"
+      "porkchop": "2026-02-23 16:22:39 +0500",
+      "apple": "2026-02-23 15:53:59 +0500",
+      "cooked_chicken": "2026-02-23 20:18:00 +0500",
+      "potato": "2026-02-23 15:47:21 +0500",
+      "carrot": "2026-02-27 21:05:34 +0500"
     },
     "done": false
   },
@@ -492,6 +494,7 @@
       "minecraft:pillager": "2026-02-23 21:38:15 +0500",
       "minecraft:blaze": "2026-02-25 12:39:12 +0500",
       "minecraft:skeleton": "2026-02-23 15:58:50 +0500",
+      "minecraft:phantom": "2026-02-27 20:58:09 +0500",
       "minecraft:witch": "2026-02-23 21:07:20 +0500",
       "minecraft:wither_skeleton": "2026-02-25 12:39:51 +0500",
       "minecraft:ghast": "2026-02-24 15:20:03 +0500",
@@ -2908,6 +2911,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2026-02-25 14:19:47 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2026-02-25 14:19:47 +0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-02-25 14:22:57 +0500"
@@ -2920,27 +2935,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
-    "criteria": {
-      "has_deepslate_diamond_ore": "2026-02-25 14:25:48 +0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2026-02-25 14:22:57 +0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
-    "criteria": {
-      "has_deepslate_diamond_ore": "2026-02-25 14:25:48 +0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/sticky_piston": {
-    "criteria": {
-      "has_slime_ball": "2026-02-25 14:19:47 +0500"
     },
     "done": true
   },
@@ -2956,15 +2953,105 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/slime_block": {
-    "criteria": {
-      "has_slime_ball": "2026-02-25 14:19:47 +0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-02-25 14:22:57 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-02-25 14:25:48 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-02-25 14:25:48 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_smelting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2026-02-27 21:22:58 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2026-02-27 21:47:25 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_stone_bricks": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks": {
+    "criteria": {
+      "has_tag": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_blasting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2026-02-27 21:22:58 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template": {
+    "criteria": {
+      "has_eye_armor_trim_smithing_template": "2026-02-27 21:47:25 +0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-02-27 21:45:56 +0500"
+    },
+    "done": true
+  },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2026-02-27 21:45:55 +0500"
     },
     "done": true
   },
