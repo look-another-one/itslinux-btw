@@ -57,5 +57,8 @@ with pkgs; [
     nautilus
     ungoogled-chromium
     logseq
+    distrobox
+    mesa
 ]
+
 
