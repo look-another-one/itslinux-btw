@@ -4,8 +4,6 @@
    wayland.enable = true;
    # Use the Qt6 version of SDDM
    package = pkgs.kdePackages.sddm; 
-   # Set the internal theme name
-   theme = "silent";
   
   # Critical: This adds the theme files AND its Qt6 dependencies
    extraPackages = [ 
@@ -13,13 +11,20 @@
     pkgs.kdePackages.qtsvg        # Required for icons/images
   ];
 };
-      #installing sddm theme
-      programs.silentSDDM = {
-        enable = true;
-        theme = "rei";
-        # settings = { ... }; see example in module
-    };
+  #installing sddm theme
+  programs.silentSDDM = {
+     enable = true;
+     theme = "rei";
+  backgrounds = {
+    bg = ../assets/Wallpapers/0.jpg;
+  };
 
+  settings = {
+    "LoginScreen" = {
+      background = "0.jpg";
+    };
+  };      
+};
 }
 
 
