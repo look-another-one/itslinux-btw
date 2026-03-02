@@ -29,14 +29,6 @@
             users.yousaytoday = import ../home-men/home.nix;
             backupFileExtension = "nixbak";
           };
-
-      #installing sddm theme
-      programs.silentSDDM = {
-        enable = true;
-        theme = "rei";
-        # settings = { ... }; see example in module
-    };
-          
         }
 
       ];
