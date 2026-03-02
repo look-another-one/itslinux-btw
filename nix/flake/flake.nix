@@ -9,13 +9,12 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: { 
+  outputs = { self, nixpkgs, home-manager,  ... }: { 
     
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
       
       modules = [
         ../conf/configuration.nix
-        
         home-manager.nixosModules.home-manager
         {
           home-manager = {

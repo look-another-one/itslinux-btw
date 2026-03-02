@@ -55,8 +55,6 @@ with pkgs; [
     hunspell
     hunspellDicts.en_US # Example for English US
     nautilus
-    ungoogled-chromium
-    logseq
     distrobox
     mesa
 ]

@@ -17,4 +17,12 @@
     "fastfetch".source = ../../config/configfiles/fastfetch;
    };
 
+  home.file.".zshrc".source = ../../config/dotfiles/.zshrc;
+  home.file.".icons".source = ../../config/dotfiles/.icons;
+ gtk = {
+   enable = true;
+   iconTheme = {
+      name = "main";
+   };
+  };
 }
