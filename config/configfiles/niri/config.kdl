@@ -81,7 +81,7 @@ environment {
 }
 cursor {
     xcursor-theme "cursor"
-    xcursor-size 48
+    xcursor-size 32
 }
 hotkey-overlay {
     skip-at-startup
