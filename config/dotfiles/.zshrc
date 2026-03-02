@@ -21,8 +21,7 @@
 # -----------------------------------------------------
 
 
-# Use $HOME instead of ~ to ensure the path expands correctly
-ZSHRC_DIR="$HOME/itslinux-btw/config/zshrc"
+ZSHRC_DIR="$HOME/itslinux-btw/config/configfiles/zshrc"
 
 # Check if directory exists
 [ -d "$ZSHRC_DIR" ] || return
