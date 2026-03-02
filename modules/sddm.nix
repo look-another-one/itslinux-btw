@@ -16,12 +16,12 @@
      enable = true;
      theme = "rei";
   backgrounds = {
-    bg = ../assets/Wallpapers/0.jpg;
+    loginVideo = ../assets/Wallpapers/video.mp4;
   };
 
   settings = {
     "LoginScreen" = {
-      background = "0.jpg";
+      background = "video.mp4";
     };
   };      
 };
