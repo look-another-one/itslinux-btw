@@ -13,7 +13,6 @@
     pkgs.kdePackages.qtsvg        # Required for icons/images
   ];
 };
-
 }
 
 
