@@ -11,11 +11,8 @@
     pkgs.kdePackages.qtsvg        # Required for icons/images
   ];
 };
-  #installing sddm theme
-  programs.silentSDDM = {
-     enable = true;
-     theme = "rei";
-};
+
+
 }
 
 
