@@ -15,15 +15,6 @@
   programs.silentSDDM = {
      enable = true;
      theme = "rei";
-  backgrounds = {
-    loginVideo = ../assets/Wallpapers/video.mp4;
-  };
-
-  settings = {
-    "LoginScreen" = {
-      background = "video.mp4";
-    };
-  };      
 };
 }
 

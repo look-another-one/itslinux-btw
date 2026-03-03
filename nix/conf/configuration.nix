@@ -8,8 +8,23 @@
   ];
 
   #### BOOT ####
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  #boot.loader.systemd-boot.enable = true;
+ # boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot"; # Matches your lsblk output
+    };
+    grub = {
+      enable = true;
+      device = "nodev";          # Required for UEFI
+      efiSupport = true;
+      useOSProber = true;        # Highly recommended to find other OSs
+      configurationLimit = 10;   # Keeps the menu clean
+    };
+    # Make sure systemd-boot is disabled to avoid conflicts
+    systemd-boot.enable = false;
+  };
 
   #### SYSTEM ####
   networking.hostName = "nixos-btw";
