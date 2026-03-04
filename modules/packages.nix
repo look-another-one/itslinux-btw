@@ -13,7 +13,6 @@ with pkgs; [
     flatpak
     fastfetch
     vesktop
-    python3
     jetbrains-mono
     swww
     swaynotificationcenter
@@ -25,7 +24,7 @@ with pkgs; [
     kitty
     tty-clock
     uv
-    python3
+    python314
     android-tools
     keepassxc
     appimage-run
