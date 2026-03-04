@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
-{
-  programs.niri.enable = true;
 
+{
   environment.systemPackages = with pkgs; [
-    xwayland-satellite
+    neovim
+    vscodium
+    code-cursor
   ];
 }

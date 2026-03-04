@@ -21,10 +21,16 @@
     ###                         Programs                          ### 
     #################################################################
     ../../modules/program/niri/default.nix
-    ../../modules/program/zsh/default.nix
-    ../../modules/program/firefox/default.nix
     ../../modules/program/keyd/default.nix
     ../../modules/program/obs-studio/default.nix
+    ../../modules/packages/cli/default.nix
+    ../../modules/packages/terminal/default.nix
+    ../../modules/packages/wm/default.nix
+    ../../modules/packages/browsers/default.nix
+    ../../modules/packages/editors/default.nix
+    ../../modules/packages/media/default.nix
+    ../../modules/packages/dev/default.nix
+    ../../modules/packages/apps/default.nix
   ];
 
   nix.gc = {
@@ -55,8 +61,6 @@
   nixpkgs.config.allowUnfree = true;
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
-  #### PACKAGES ####
-  environment.systemPackages = import ../../modules/packages.nix { inherit pkgs; };
 
   #### VERSION ####
   system.stateVersion = "25.11";

@@ -1,8 +1,11 @@
 { config, pkgs, ... }:
-{
-  programs.niri.enable = true;
 
+{
   environment.systemPackages = with pkgs; [
-    xwayland-satellite
+    mpv
+    imv
+    gimp
+    v4l-utils
+    obs-studio
   ];
 }

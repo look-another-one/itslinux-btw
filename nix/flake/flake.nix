@@ -7,21 +7,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    silentSDDM = {
-      url = "github:uiriansan/SilentSDDM";
-      inputs.nixpkgs.follows = "nixpkgs";
-   };
+
 
   };
 
-  outputs = { self, nixpkgs, home-manager, silentSDDM, ... }: { 
+  outputs = { self, nixpkgs, home-manager, ... }: { 
     
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
       
       modules = [
-        ../conf/configuration.nix
+        ../config/configuration.nix
         home-manager.nixosModules.home-manager
-        silentSDDM.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;
