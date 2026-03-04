@@ -8,8 +8,6 @@
   ];
 
   #### BOOT ####
-  #boot.loader.systemd-boot.enable = true;
- # boot.loader.efi.canTouchEfiVariables = true;
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -25,6 +23,14 @@
     # Make sure systemd-boot is disabled to avoid conflicts
     systemd-boot.enable = false;
   };
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  # 3. Automatically optimize the Nix store (saves even more space)
+  nix.settings.auto-optimise-store = true;
 
   #### SYSTEM ####
   networking.hostName = "nixos-btw";
