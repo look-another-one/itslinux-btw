@@ -5,24 +5,9 @@
     ./hardware-configuration.nix
     ../../modules/services.nix
     ../../modules/sddm.nix
+    ../../modules/grub.nix
   ];
 
-  #### BOOT ####
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot"; # Matches your lsblk output
-    };
-    grub = {
-      enable = true;
-      device = "nodev";          # Required for UEFI
-      efiSupport = true;
-      useOSProber = true;        # Highly recommended to find other OSs
-      configurationLimit = 10;   # Keeps the menu clean
-    };
-    # Make sure systemd-boot is disabled to avoid conflicts
-    systemd-boot.enable = false;
-  };
   nix.gc = {
     automatic = true;
     dates = "weekly";

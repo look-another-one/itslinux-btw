@@ -56,6 +56,7 @@ with pkgs; [
     nautilus
     distrobox
     mesa
+    imv
 ]
 
 
