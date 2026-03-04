@@ -3,9 +3,28 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/services.nix
-    ../../modules/sddm.nix
-    ../../modules/grub.nix
+    #################################################################
+    ###                         Core Services                     ### 
+    #################################################################
+    ../../modules/core/networking.nix
+    ../../modules/core/ssh.nix
+    ../../modules/core/boot.nix
+    ../../modules/core/system-services.nix
+    ../../modules/core/sddm.nix
+    ../../modules/core/grub.nix
+    ../../modules/core/bluetooth.nix
+    ../../modules/core/printing.nix
+    ../../modules/core/flatpak.nix
+    ../../modules/core/virtualisation.nix
+    ../../modules/core/audio.nix
+    #################################################################
+    ###                         Programs                          ### 
+    #################################################################
+    ../../modules/program/niri/default.nix
+    ../../modules/program/zsh/default.nix
+    ../../modules/program/firefox/default.nix
+    ../../modules/program/keyd/default.nix
+    ../../modules/program/obs-studio/default.nix
   ];
 
   nix.gc = {

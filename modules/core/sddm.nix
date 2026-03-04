@@ -18,7 +18,7 @@
   environment.systemPackages = [
     (pkgs.stdenvNoCC.mkDerivation {   # ← stdenvNoCC is faster / cleaner for pure data
       name = "sddm-theme-silentsddm";
-      src = ../config/themes/SilentSDDM;
+      src = ../../config/themes/SilentSDDM;
 
       dontUnpack = true;   # ← optional but good if src is already ready
 
