@@ -17,12 +17,16 @@
     ../../modules/core/flatpak.nix
     ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
+    ../../modules/core/zsh.nix
     #################################################################
     ###                         Programs                          ### 
     #################################################################
     ../../modules/program/niri/default.nix
     ../../modules/program/keyd/default.nix
     ../../modules/program/obs-studio/default.nix
+    #################################################################
+    ###                         Packages                          ### 
+    #################################################################
     ../../modules/packages/cli/default.nix
     ../../modules/packages/terminal/default.nix
     ../../modules/packages/wm/default.nix

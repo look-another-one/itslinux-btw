@@ -15,7 +15,5 @@
     distrobox
     mesa
     jetbrains-mono
-    flatpak
-    zsh
   ];
 }
