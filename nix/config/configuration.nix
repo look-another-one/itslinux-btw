@@ -27,13 +27,6 @@
     #################################################################
     ###                         Packages                          ### 
     #################################################################
-    ../../modules/packages/cli/default.nix
-    ../../modules/packages/terminal/default.nix
-    ../../modules/packages/wm/default.nix
-    ../../modules/packages/browsers/default.nix
-    ../../modules/packages/editors/default.nix
-    ../../modules/packages/media/default.nix
-    ../../modules/packages/dev/default.nix
     ../../modules/packages/apps/default.nix
   ];
 
