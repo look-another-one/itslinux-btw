@@ -11,9 +11,51 @@
     libreoffice-fresh
     hunspell
     hunspellDicts.en_US
-    nautilus
     distrobox
     mesa
     jetbrains-mono
+    nemo
+    brave
+    firefox
+    wget
+    git
+    fastfetch
+    unzip
+    dysk
+    bat
+    btop 
+    uv
+    python314
+    android-tools
+    jdk21
+    conda
+    nodejs
+    lazygit
+    lazydocker
+     neovim
+    vscodium
+    code-cursor
+     mpv
+    imv
+    gimp
+    v4l-utils
+    obs-studio
+    kitty
+    warp-terminal
+    tmux
+    yazi
+    nushell
+    eza
+    cava
+    tty-clock
+    rofi
+    niri
+    swaylock-effects
+    swww
+    swaynotificationcenter
+    waybar
+    quickshell
+    qt6.qtwayland
+ 
   ];
 }

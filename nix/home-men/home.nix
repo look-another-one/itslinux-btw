@@ -15,6 +15,7 @@
     "niri".source = ../../config/configfiles/niri;
     "starship".source = ../../config/configfiles/starship;
     "fastfetch".source = ../../config/configfiles/fastfetch;
+    "kitty".source = ../../config/configfiles/kitty;
    };
 
   home.file.".zshrc".source = ../../config/dotfiles/.zshrc;
