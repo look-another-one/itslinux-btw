@@ -44,7 +44,7 @@ layout {
     }
     focus-ring {
         width 2
-        active-color   "#808080"      // Medium gray
+        active-color   "#00bbff"      // Medium gray
         inactive-color "#505050"      // Dark gray
     }
     shadow {
