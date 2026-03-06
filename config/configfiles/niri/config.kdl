@@ -70,6 +70,7 @@ overview {
 spawn-at-startup "qs"
 spawn-at-startup "swaync"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "swww clear"
 // spawn-at-startup "~/.Scripts/swww_animation/./swww.sh"
 spawn-at-startup "~/.Scripts/gen_file/./script.sh"
 environment {
