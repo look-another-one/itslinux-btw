@@ -42,7 +42,7 @@
     obs-studio
     kitty
     warp-terminal
-    tmux
+    zellij
     yazi
     nushell
     eza
