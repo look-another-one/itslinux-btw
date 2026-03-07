@@ -1,0 +1,397 @@
+[12:13:13] [main/INFO]: Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
+[12:13:14] [main/INFO]: Loading 117 mods:
+	- almanac 1.6.2
+	   \-- cloth-config 20.0.149
+	        \-- cloth-basic-math 0.6.1
+	- chunky 1.4.55
+	- collective 8.13
+	- fabric-api 0.141.3+1.21.11
+	   |-- fabric-api-base 1.0.5+4ebb5c083e
+	   |-- fabric-api-lookup-api-v1 1.6.114+20dc27073e
+	   |-- fabric-biome-api-v1 17.1.1+4fc5413f3e
+	   |-- fabric-block-api-v1 1.1.10+4ebb5c083e
+	   |-- fabric-block-view-api-v2 1.0.39+4ebb5c083e
+	   |-- fabric-command-api-v2 2.4.7+6b42a6003e
+	   |-- fabric-content-registries-v0 10.2.14+4fc5413f3e
+	   |-- fabric-convention-tags-v1 2.1.55+7f945d5b3e
+	   |-- fabric-convention-tags-v2 2.17.3+8ef948ba3e
+	   |-- fabric-crash-report-info-v1 0.3.23+4ebb5c083e
+	   |-- fabric-data-attachment-api-v1 1.8.47+eed0806f3e
+	   |-- fabric-data-generation-api-v1 23.4.0+69974c4e3e
+	   |-- fabric-dimensions-v1 4.0.28+4fc5413f3e
+	   |-- fabric-entity-events-v1 3.1.1+1d0ab4303e
+	   |-- fabric-events-interaction-v0 4.1.0+3b89ecf63e
+	   |-- fabric-game-rule-api-v1 2.0.3+4fc5413f3e
+	   |-- fabric-item-api-v1 11.5.20+d0c46b9e3e
+	   |-- fabric-item-group-api-v1 4.2.36+4fc5413f3e
+	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f3e
+	   |-- fabric-lifecycle-events-v1 2.6.15+4ebb5c083e
+	   |-- fabric-loot-api-v2 3.0.73+3f89f5a53e
+	   |-- fabric-loot-api-v3 2.0.20+78c8b4663e
+	   |-- fabric-message-api-v1 6.1.12+4ebb5c083e
+	   |-- fabric-model-loading-api-v1 6.0.15+4fc5413f3e
+	   |-- fabric-networking-api-v1 5.1.5+ae1e07683e
+	   |-- fabric-object-builder-api-v1 21.1.39+4fc5413f3e
+	   |-- fabric-particles-v1 4.2.11+4fc5413f3e
+	   |-- fabric-recipe-api-v1 8.2.3+4ebb5c083e
+	   |-- fabric-registry-sync-v0 6.2.5+1718722b3e
+	   |-- fabric-renderer-api-v1 8.0.3+f4ffd2e53e
+	   |-- fabric-renderer-indigo 5.0.3+f4ffd2e53e
+	   |-- fabric-rendering-fluids-v1 3.1.43+4ebb5c083e
+	   |-- fabric-rendering-v1 16.2.10+0290ad933e
+	   |-- fabric-resource-conditions-api-v1 5.0.35+4fc5413f3e
+	   |-- fabric-resource-loader-v0 3.3.4+4fc5413f3e
+	   |-- fabric-resource-loader-v1 1.0.10+78c8b4663e
+	   |-- fabric-screen-api-v1 3.1.7+4ebb5c083e
+	   |-- fabric-screen-handler-api-v1 1.3.161+4fc5413f3e
+	   |-- fabric-serialization-api-v1 1.0.5+4ebb5c083e
+	   |-- fabric-sound-api-v1 1.0.51+4fc5413f3e
+	   |-- fabric-tag-api-v1 1.2.20+4fc5413f3e
+	   |-- fabric-transfer-api-v1 6.0.25+4fc5413f3e
+	   \-- fabric-transitive-access-wideners-v1 7.1.0+014c8cec3e
+	- fabric-language-kotlin 1.13.9+kotlin.2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.3.10
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.31.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.7.1
+	   |-- org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-io-core-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.10.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.10.0
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.10.0
+	- fabricloader 0.18.4
+	   \-- mixinextras 0.5.0
+	- huskhomes 4.10
+	   |-- adventure-platform-fabric 6.8.0
+	   |    |-- net_kyori_adventure-api 4.25.0
+	   |    |-- net_kyori_adventure-key 4.25.0
+	   |    |-- net_kyori_adventure-platform-api 4.4.1
+	   |    |-- net_kyori_adventure-platform-mod-shared-fabric-repack 6.8.0
+	   |    |-- net_kyori_adventure-text-logger-slf4j 4.25.0
+	   |    |-- net_kyori_adventure-text-minimessage 4.25.0
+	   |    |-- net_kyori_adventure-text-serializer-ansi 4.25.0
+	   |    |-- net_kyori_adventure-text-serializer-gson 4.25.0
+	   |    |-- net_kyori_adventure-text-serializer-json 4.25.0
+	   |    |-- net_kyori_adventure-text-serializer-plain 4.25.0
+	   |    |-- net_kyori_ansi 1.1.1
+	   |    |-- net_kyori_examination-api 1.3.0
+	   |    |-- net_kyori_examination-string 1.3.0
+	   |    \-- net_kyori_option 1.1.0
+	   |-- com_fatboyindustrial_gson-javatime-serialisers_gso6b8820f28ed4bb 1.1.2
+	   |-- com_google_code_gson_gson 2.13.2
+	   |-- com_h2database_h2 2.3.232
+	   |-- com_mysql_mysql-connector-j 9.3.0
+	   |-- com_zaxxer_hikaricp 7.0.2
+	   |-- commons-io_commons-io 2.21.0
+	   |-- de_exlll_configlib-core 4.8.0
+	   |-- de_exlll_configlib-yaml 4.8.0
+	   |-- fabric-permissions-api-v0 0.6.1
+	   |-- fabricpluginmessaging 1.0.0
+	   |-- huskhomes_common 4.10
+	   |-- net_impactdev_impactor_api_economy_dev-slim 5.3.4
+	   |-- net_william278_desertwell 2.0.4
+	   |-- net_william278_minedown 1.8.2
+	   |-- net_william278_paginedown 1.1.2
+	   |-- org_apache_commons_commons-pool2 2.13.1
+	   |-- org_apache_commons_commons-text 1.15.0
+	   |-- org_mariadb_jdbc_mariadb-java-client 3.5.3
+	   |-- org_snakeyaml_snakeyaml-engine 2.10
+	   |-- org_xerial_sqlite-jdbc 3.49.1.0
+	   |-- placeholder-api 2.8.1+1.21.10
+	   |-- redis_clients_authentication_redis-authx-core 0.1.1-beta2
+	   |-- redis_clients_jedis 6.0.0
+	   \-- toilet 1.0.17
+	- java 21
+	- letmedespawn 1.6.2
+	- mine-spawners 1.6.6
+	- minecraft 1.21.11
+	- potatoptimize 2.1.0
+	- raknetify 0.1.0+alpha.5.195
+	- silk-all 1.11.5
+	   |-- silk-commands 1.11.5
+	   |-- silk-core 1.11.5
+	   |-- silk-game 1.11.5
+	   |-- silk-igui 1.11.5
+	   |-- silk-nbt 1.11.5
+	   |-- silk-network 1.11.5
+	   \-- silk-persistence 1.11.5
+	- spark 1.10.156
+	   \-- fabric-permissions-api-v0 0.6.1
+	- trade_cycling 1.21.11-1.0.20
+	   |-- fabric-key-binding-api-v1 1.1.7+4fc5413f53
+	   \-- fabric-screen-api-v1 3.1.7+4ebb5c0853
+	- treeharvester 9.3
+	- veinminer 2.5.2
+	   |-- de_miraculixx_core_dev 2.5.2
+	   \-- fabric-permissions-api-v0 0.6.1
+[12:13:14] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/yousaytoday/itslinux-btw/assets/minecraft/server-1.21.11-fabric/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[12:13:14] [main/INFO]: Compatibility level set to JAVA_21
+[12:13:14] [main/INFO]: Loaded optimizations overrides for Potatoptimize: 1 override(s) found
+[12:13:15] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.EntityTickingListAccessor' as 'Potatoptimize' disables it
+[12:13:15] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.ServerLevelMixin' as 'Potatoptimize' disables it
+[12:13:15] [main/WARN]: Force-disabling mixin 'mixin.nonvanilla.experimental.tick_skipping.TickThresholdAccessor' as 'Potatoptimize' disables it
+[12:13:15] [main/WARN]: Error loading class: net/minecraft/class_2539$class_4532 (java.lang.ClassNotFoundException: net/minecraft/class_2539$class_4532)
+[12:13:15] [main/WARN]: @Mixin target net/minecraft/class_2539$class_4532 was not found raknetify-fabric.mixins.json:access.INetworkStateInternalPacketHandler from mod raknetify
+[12:13:15] [main/WARN]: Error loading class: net/minecraft/class_9188 (java.lang.ClassNotFoundException: net/minecraft/class_9188)
+[12:13:15] [main/WARN]: Error loading class: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon (java.lang.ClassNotFoundException: org/quiltmc/qsl/networking/impl/server/ServerLoginNetworkAddon)
+[12:13:16] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[12:13:17] [main/WARN]: Did not find udev library in operating system. Some features may not work.
+[12:13:35] [main/INFO]: Almanac Fabric config reloaded, cache cleared
+[12:13:35] [main/INFO]: Almanac Fabric config initialized
+[12:13:35] [main/INFO]: Almanac initialized
+[12:13:35] [main/INFO]: Loading Collective version 8.13.
+[12:13:36] [main/INFO]: FabricPluginMessaging initialized!
+[12:13:38] [main/INFO]: [STDOUT]: Raknetify: Using leak detector level SIMPLE
+[12:13:39] [main/INFO]: Initializing Silk
+[12:13:39] [main/INFO]: Veinminer Version: 2.5.2 (fabric)
+[12:13:41] [main/INFO]: Registered 'on_load' hooks
+[12:13:41] [main/INFO]: Successfully loaded HuskHomes v4.10
+[12:13:42] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[12:13:43] [DefaultDispatcher-worker-2/INFO]: [STDOUT]: [VeinminerUpdater] veinminer is up to date
+[12:13:48] [main/INFO]: Loaded 1470 recipes
+[12:13:48] [main/INFO]: Loaded 1584 advancements
+[12:13:48] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 4.460 ms
+[12:13:51] [Server thread/INFO]: Initialized mcCoroutineScope (MinecraftServer as executor)
+[12:13:53] [Server thread/INFO]: Starting background profiler...
+[12:13:56] [Server thread/INFO]: Registered 'on_enable' hooks
+[12:13:56] [Server thread/INFO]: Successfully enabled HuskHomes v4.10
+[12:13:56] [HuskHomes-ThreadPool/INFO]: Registered 'after_load' hooks
+[12:13:56] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[12:13:56] [Server thread/INFO]: Loading properties
+[12:13:56] [Server thread/INFO]: Default game type: SURVIVAL
+[12:13:56] [Server thread/INFO]: Generating keypair
+[12:13:56] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:13:56] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:9c0f:84ff:fec0:3759%veth2cb4190
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:785e:e2ff:fe3a:eb09%vethb1d2ecd
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.17.0.1
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.19.0.1
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:d430:9dff:fe3f:ecee%br-38280afbae39
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.20.0.1
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /172.18.0.1
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.56.1
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /fe80:0:0:0:d2b5:d4ef:3e58:6fd4%enp2s0
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:4c3:d6fc:5fb1:3b76%enp2s0
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /2400:adc7:4112:ec00:44ad:7f67:fae4:7cee%enp2s0
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /192.168.1.5
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /0:0:0:0:0:0:0:1%lo
+[12:13:57] [Server thread/INFO]: [STDOUT]: Starting raknetify server on /127.0.0.1
+[12:13:57] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:13:57] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:13:57] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:13:57] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:13:57] [Server thread/INFO]: Preparing level "world"
+[12:13:58] [Server thread/INFO]: Loading 0 persistent chunks...
+[12:13:58] [Server thread/INFO]: Preparing spawn area: 100%
+[12:13:58] [Server thread/INFO]: Time elapsed: 145 ms
+[12:13:58] [Server thread/INFO]: Done (1.342s)! For help, type "help"
+[12:14:58] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[12:16:18] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:18] [Server thread/INFO]: plugins<--[HERE]
+[12:16:23] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:23] [Server thread/INFO]: mods<--[HERE]
+[12:16:28] [Server thread/INFO]: /advancement (grant|revoke)
+[12:16:28] [Server thread/INFO]: /attribute <target> <attribute> (get|base|modifier)
+[12:16:28] [Server thread/INFO]: /execute (run|if|unless|as|at|store|positioned|rotated|facing|align|anchored|in|summon|on)
+[12:16:28] [Server thread/INFO]: /bossbar (add|remove|list|set|get)
+[12:16:28] [Server thread/INFO]: /clear [<targets>]
+[12:16:28] [Server thread/INFO]: /clone (<begin>|from)
+[12:16:28] [Server thread/INFO]: /damage <target> <amount> [<damageType>]
+[12:16:28] [Server thread/INFO]: /data (merge|get|remove|modify)
+[12:16:28] [Server thread/INFO]: /datapack (enable|disable|list|create)
+[12:16:28] [Server thread/INFO]: /debug (start|stop|function)
+[12:16:28] [Server thread/INFO]: /defaultgamemode <gamemode>
+[12:16:28] [Server thread/INFO]: /dialog (show|clear)
+[12:16:28] [Server thread/INFO]: /difficulty [peaceful|easy|normal|hard]
+[12:16:28] [Server thread/INFO]: /effect (clear|give)
+[12:16:28] [Server thread/INFO]: /me <action>
+[12:16:28] [Server thread/INFO]: /enchant <targets> <enchantment> [<level>]
+[12:16:28] [Server thread/INFO]: /experience (add|set|query)
+[12:16:28] [Server thread/INFO]: /xp -> experience
+[12:16:28] [Server thread/INFO]: /fill <from> <to> <block> [outline|hollow|destroy|strict|replace|keep]
+[12:16:28] [Server thread/INFO]: /fillbiome <from> <to> <biome> [replace]
+[12:16:28] [Server thread/INFO]: /forceload (add|remove|query)
+[12:16:28] [Server thread/INFO]: /function <name> [<arguments>|with]
+[12:16:28] [Server thread/INFO]: /gamemode <gamemode> [<target>]
+[12:16:28] [Server thread/INFO]: /gamerule (pvp|minecraft:pvp|reduced_debug_info|minecraft:reduced_debug_info|projectiles_can_break_blocks|minecraft:projectiles_can_break_blocks|limited_crafting|minecraft:limited_crafting|fire_damage|minecraft:fire_damage|spread_vines|minecraft:spread_vines|spawn_patrols|minecraft:spawn_patrols|random_tick_speed|minecraft:random_tick_speed|tnt_explosion_drop_decay|minecraft:tnt_explosion_drop_decay|drowning_damage|minecraft:drowning_damage|max_snow_accumulation_height|minecraft:max_snow_accumulation_height|raids|minecraft:raids|spawn_mobs|minecraft:spawn_mobs|send_command_feedback|minecraft:send_command_feedback|advance_weather|minecraft:advance_weather|ender_pearls_vanish_on_death|minecraft:ender_pearls_vanish_on_death|lava_source_conversion|minecraft:lava_source_conversion|command_blocks_work|minecraft:command_blocks_work|keep_inventory|minecraft:keep_inventory|players_nether_portal_default_delay|minecraft:players_nether_portal_default_delay|players_sleeping_percentage|minecraft:players_sleeping_percentage|log_admin_commands|minecraft:log_admin_commands|locator_bar|minecraft:locator_bar|show_advancement_messages|minecraft:show_advancement_messages|command_block_output|minecraft:command_block_output|water_source_conversion|minecraft:water_source_conversion|block_explosion_drop_decay|minecraft:block_explosion_drop_decay|allow_entering_nether_using_portals|minecraft:allow_entering_nether_using_portals|max_command_forks|minecraft:max_command_forks|spawner_blocks_work|minecraft:spawner_blocks_work|mob_drops|minecraft:mob_drops|players_nether_portal_creative_delay|minecraft:players_nether_portal_creative_delay|mob_explosion_drop_decay|minecraft:mob_explosion_drop_decay|fire_spread_radius_around_player|minecraft:fire_spread_radius_around_player|fall_damage|minecraft:fall_damage|block_drops|minecraft:block_drops|elytra_movement_check|minecraft:elytra_movement_check|entity_drops|minecraft:entity_drops|respawn_radius|minecraft:respawn_radius|universal_anger|minecraft:universal_anger|freeze_damage|minecraft:freeze_damage|advance_time|minecraft:advance_time|tnt_explodes|minecraft:tnt_explodes|natural_health_regeneration|minecraft:natural_health_regeneration|spawn_wandering_traders|minecraft:spawn_wandering_traders|global_sound_events|minecraft:global_sound_events|spawn_phantoms|minecraft:spawn_phantoms|player_movement_check|minecraft:player_movement_check|mob_griefing|minecraft:mob_griefing|show_death_messages|minecraft:show_death_messages|max_block_modifications|minecraft:max_block_modifications|immediate_respawn|minecraft:immediate_respawn|forgive_dead_players|minecraft:forgive_dead_players|spectators_generate_chunks|minecraft:spectators_generate_chunks|spawn_wardens|minecraft:spawn_wardens|spawn_monsters|minecraft:spawn_monsters|max_command_sequence_length|minecraft:max_command_sequence_length|max_entity_cramming|minecraft:max_entity_cramming)
+[12:16:28] [Server thread/INFO]: /give <targets> <item> [<count>]
+[12:16:28] [Server thread/INFO]: /help [<command>]
+[12:16:28] [Server thread/INFO]: /item (replace|modify)
+[12:16:28] [Server thread/INFO]: /kick <targets> [<reason>]
+[12:16:28] [Server thread/INFO]: /kill [<targets>]
+[12:16:28] [Server thread/INFO]: /list [uuids]
+[12:16:28] [Server thread/INFO]: /locate (structure|biome|poi)
+[12:16:28] [Server thread/INFO]: /loot (replace|insert|give|spawn)
+[12:16:28] [Server thread/INFO]: /msg <targets> <message>
+[12:16:28] [Server thread/INFO]: /tell -> msg
+[12:16:28] [Server thread/INFO]: /w -> msg
+[12:16:28] [Server thread/INFO]: /particle <name> [<pos>]
+[12:16:28] [Server thread/INFO]: /place (feature|jigsaw|structure|template)
+[12:16:28] [Server thread/INFO]: /playsound <sound> [master|music|record|weather|block|hostile|neutral|player|ambient|voice|ui]
+[12:16:28] [Server thread/INFO]: /random (value|roll|reset)
+[12:16:28] [Server thread/INFO]: /reload
+[12:16:28] [Server thread/INFO]: /recipe (give|take)
+[12:16:28] [Server thread/INFO]: /fetchprofile (name|id)
+[12:16:28] [Server thread/INFO]: /return (<value>|fail|run)
+[12:16:28] [Server thread/INFO]: /ride <target> (mount|dismount)
+[12:16:28] [Server thread/INFO]: /rotate <target> (<rotation>|facing)
+[12:16:28] [Server thread/INFO]: /say <message>
+[12:16:28] [Server thread/INFO]: /schedule (function|clear)
+[12:16:28] [Server thread/INFO]: /scoreboard (objectives|players)
+[12:16:28] [Server thread/INFO]: /seed
+[12:16:28] [Server thread/INFO]: /version
+[12:16:28] [Server thread/INFO]: /setblock <pos> <block> [destroy|keep|replace|strict]
+[12:16:28] [Server thread/INFO]: /spawnpoint [<targets>]
+[12:16:28] [Server thread/INFO]: /setworldspawn [<pos>]
+[12:16:28] [Server thread/INFO]: /spectate [<target>]
+[12:16:28] [Server thread/INFO]: /spreadplayers <center> <spreadDistance> <maxRange> (<respectTeams>|under)
+[12:16:28] [Server thread/INFO]: /stopsound <targets> [*|master|music|record|weather|block|hostile|neutral|player|ambient|voice|ui]
+[12:16:28] [Server thread/INFO]: /stopwatch (create|query|restart|remove)
+[12:16:28] [Server thread/INFO]: /summon <entity> [<pos>]
+[12:16:28] [Server thread/INFO]: /tag <targets> (add|remove|list)
+[12:16:28] [Server thread/INFO]: /team (list|add|remove|empty|join|leave|modify)
+[12:16:28] [Server thread/INFO]: /teammsg <message>
+[12:16:28] [Server thread/INFO]: /tm -> teammsg
+[12:16:28] [Server thread/INFO]: /teleport (<location>|<destination>|<targets>)
+[12:16:28] [Server thread/INFO]: /tp -> teleport
+[12:16:28] [Server thread/INFO]: /tellraw <targets> <message>
+[12:16:28] [Server thread/INFO]: /test (run|runmultiple|runthese|runclosest|runthat|runfailed|verify|locate|resetclosest|resetthese|resetthat|clearthat|clearthese|clearall|stop|pos|create)
+[12:16:28] [Server thread/INFO]: /tick (query|rate|step|sprint|unfreeze|freeze)
+[12:16:28] [Server thread/INFO]: /time (set|add|query)
+[12:16:28] [Server thread/INFO]: /title <targets> (clear|reset|title|subtitle|actionbar|times)
+[12:16:28] [Server thread/INFO]: /trigger <objective> [add|set]
+[12:16:28] [Server thread/INFO]: /waypoint (list|modify)
+[12:16:28] [Server thread/INFO]: /weather (clear|rain|thunder)
+[12:16:28] [Server thread/INFO]: /worldborder (add|set|center|damage|get|warning)
+[12:16:28] [Server thread/INFO]: /jfr (start|stop)
+[12:16:28] [Server thread/INFO]: /ban-ip <target> [<reason>]
+[12:16:28] [Server thread/INFO]: /banlist [ips|players]
+[12:16:28] [Server thread/INFO]: /ban <targets> [<reason>]
+[12:16:28] [Server thread/INFO]: /deop <targets>
+[12:16:28] [Server thread/INFO]: /op <targets>
+[12:16:28] [Server thread/INFO]: /pardon <targets>
+[12:16:28] [Server thread/INFO]: /pardon-ip <target>
+[12:16:28] [Server thread/INFO]: /perf (start|stop)
+[12:16:28] [Server thread/INFO]: /save-all [flush]
+[12:16:28] [Server thread/INFO]: /save-off
+[12:16:28] [Server thread/INFO]: /save-on
+[12:16:28] [Server thread/INFO]: /setidletimeout <minutes>
+[12:16:28] [Server thread/INFO]: /stop
+[12:16:28] [Server thread/INFO]: /transfer <hostname> [<port>]
+[12:16:28] [Server thread/INFO]: /whitelist (on|off|list|add|remove|reload)
+[12:16:28] [Server thread/INFO]: /veinminer [reload|blocks|toggle|settings|groups]
+[12:16:28] [Server thread/INFO]: /adventure_callback <uuid>
+[12:16:28] [Server thread/INFO]: /chunky [cancel|center|confirm|continue|corners|help|pattern|pause|progress|quiet|radius|reload|selection|shape|silent|spawn|start|trim|worldborder|world]
+[12:16:28] [Server thread/INFO]: /back
+[12:16:28] [Server thread/INFO]: /huskhomes:back -> back
+[12:16:28] [Server thread/INFO]: /delhome [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:delhome -> delhome
+[12:16:28] [Server thread/INFO]: /delwarp [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:delwarp -> delwarp
+[12:16:28] [Server thread/INFO]: /edithome [<name rename|description|relocate|privacy>]
+[12:16:28] [Server thread/INFO]: /huskhomes:edithome -> edithome
+[12:16:28] [Server thread/INFO]: /editwarp [<name rename|description|relocate>]
+[12:16:28] [Server thread/INFO]: /huskhomes:editwarp -> editwarp
+[12:16:28] [Server thread/INFO]: /home [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:home -> home
+[12:16:28] [Server thread/INFO]: /homelist [<player page>]
+[12:16:28] [Server thread/INFO]: /huskhomes:homelist -> homelist
+[12:16:28] [Server thread/INFO]: /homes -> homelist
+[12:16:28] [Server thread/INFO]: /huskhomes:homes -> homelist
+[12:16:28] [Server thread/INFO]: /huskhomes [<import|about|status|reload|homeslots|update|dump|help|delete>]
+[12:16:28] [Server thread/INFO]: /huskhomes:huskhomes -> huskhomes
+[12:16:28] [Server thread/INFO]: /phome [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:phome -> phome
+[12:16:28] [Server thread/INFO]: /publichome -> phome
+[12:16:28] [Server thread/INFO]: /huskhomes:publichome -> phome
+[12:16:28] [Server thread/INFO]: /phomelist [<page>]
+[12:16:28] [Server thread/INFO]: /huskhomes:phomelist -> phomelist
+[12:16:28] [Server thread/INFO]: /phomes -> phomelist
+[12:16:28] [Server thread/INFO]: /huskhomes:phomes -> phomelist
+[12:16:28] [Server thread/INFO]: /publichomelist -> phomelist
+[12:16:28] [Server thread/INFO]: /huskhomes:publichomelist -> phomelist
+[12:16:28] [Server thread/INFO]: /rtp [<player world server|world>]
+[12:16:28] [Server thread/INFO]: /huskhomes:rtp -> rtp
+[12:16:28] [Server thread/INFO]: /sethome [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:sethome -> sethome
+[12:16:28] [Server thread/INFO]: /setspawn
+[12:16:28] [Server thread/INFO]: /huskhomes:setspawn -> setspawn
+[12:16:28] [Server thread/INFO]: /setwarp [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:setwarp -> setwarp
+[12:16:28] [Server thread/INFO]: /spawn [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:spawn -> spawn
+[12:16:28] [Server thread/INFO]: /huskhomes:tp -> tp
+[12:16:28] [Server thread/INFO]: /tpo -> tp
+[12:16:28] [Server thread/INFO]: /huskhomes:tpo -> tp
+[12:16:28] [Server thread/INFO]: /tpa [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tpa -> tpa
+[12:16:28] [Server thread/INFO]: /tpaall
+[12:16:28] [Server thread/INFO]: /huskhomes:tpaall -> tpaall
+[12:16:28] [Server thread/INFO]: /tpaccept [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tpaccept -> tpaccept
+[12:16:28] [Server thread/INFO]: /tpyes -> tpaccept
+[12:16:28] [Server thread/INFO]: /huskhomes:tpyes -> tpaccept
+[12:16:28] [Server thread/INFO]: /tpahere [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tpahere -> tpahere
+[12:16:28] [Server thread/INFO]: /tpall
+[12:16:28] [Server thread/INFO]: /huskhomes:tpall -> tpall
+[12:16:28] [Server thread/INFO]: /tpdecline [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tpdecline -> tpdecline
+[12:16:28] [Server thread/INFO]: /tpno -> tpdecline
+[12:16:28] [Server thread/INFO]: /huskhomes:tpno -> tpdecline
+[12:16:28] [Server thread/INFO]: /tpdeny -> tpdecline
+[12:16:28] [Server thread/INFO]: /huskhomes:tpdeny -> tpdecline
+[12:16:28] [Server thread/INFO]: /tphere [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tphere -> tphere
+[12:16:28] [Server thread/INFO]: /tpohere -> tphere
+[12:16:28] [Server thread/INFO]: /huskhomes:tpohere -> tphere
+[12:16:28] [Server thread/INFO]: /tpignore
+[12:16:28] [Server thread/INFO]: /huskhomes:tpignore -> tpignore
+[12:16:28] [Server thread/INFO]: /tpoffline [<player>]
+[12:16:28] [Server thread/INFO]: /huskhomes:tpoffline -> tpoffline
+[12:16:28] [Server thread/INFO]: /warp [<name>]
+[12:16:28] [Server thread/INFO]: /huskhomes:warp -> warp
+[12:16:28] [Server thread/INFO]: /warplist [<player page>]
+[12:16:28] [Server thread/INFO]: /huskhomes:warplist -> warplist
+[12:16:28] [Server thread/INFO]: /warps -> warplist
+[12:16:28] [Server thread/INFO]: /huskhomes:warps -> warplist
+[12:16:28] [Server thread/INFO]: /almanac reload [<config>]
+[12:16:28] [Server thread/INFO]: /letmedespawn (add|remove|addPersistenceEnabler|removePersistenceEnabler)
+[12:16:28] [Server thread/INFO]: /spark [<args>]
+[12:16:29] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:29] [Server thread/INFO]: <--[HERE]
+[12:16:29] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:29] [Server thread/INFO]: <--[HERE]
+[12:16:35] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:35] [Server thread/INFO]: ...tmedespawn<--[HERE]
+[12:16:37] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:37] [Server thread/INFO]: <--[HERE]
+[12:16:37] [Server thread/INFO]: Unknown or incomplete command. See below for error
+[12:16:37] [Server thread/INFO]: <--[HERE]
+[12:28:50] [Netty Epoll IO #1/WARN]: @Redirect conflict. Skipping raknetify-fabric.mixins.json:server.MixinServerLoginNetworkHandler from mod raknetify->@Redirect::stopCompressionIfStreamingCompressionExists(Lnet/minecraft/server/MinecraftServer;)I with priority 900, already redirected by fabric-networking-api-v1.mixins.json:ServerLoginPacketListenerImplMixin from mod fabric-networking-api-v1->@Redirect::removeLateCompressionPacketSending(Lnet/minecraft/server/MinecraftServer;)I with priority 1000
+[12:29:01] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2514ms or 50 ticks behind
+[12:29:04] [Server thread/INFO]: lookanotherone[/192.168.1.5:34476] logged in with entity id 48 at (-149.1529314323878, 46.0, -3490.283408525617)
+[12:29:05] [Server thread/INFO]: lookanotherone joined the game
+[12:29:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 18225ms or 364 ticks behind
+[12:29:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4823ms or 96 ticks behind
+[12:30:58] [Server thread/INFO]: [lookanotherone: Gave 100000000 experience levels to lookanotherone]
+[12:31:15] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2276ms or 45 ticks behind
+[12:31:33] [Server thread/INFO]: Stopping the server
+[12:31:34] [Server thread/INFO]: Disabling HuskHomes v4.10...
+[12:31:34] [Server thread/INFO]: Successfully disabled HuskHomes v4.10
+[12:31:34] [Server thread/INFO]: Stopping server
+[12:31:34] [Netty Epoll IO #1/INFO]: [STDERR]: /192.168.1.5:34476 PLAY java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3d5f477f[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7a9259c8[Wrapped task = java.util.concurrent.CompletableFuture$AsyncRun@617d918d]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@74951ea5[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 7]
+[12:31:34] [Server thread/INFO]: Saving players
+[12:31:34] [Server thread/INFO]: lookanotherone lost connection: Server closed
+[12:31:34] [Server thread/INFO]: lookanotherone left the game
+[12:31:35] [Server thread/INFO]: Saving worlds
+[12:31:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[12:31:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[12:31:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[12:31:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:31:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:31:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:31:43] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
