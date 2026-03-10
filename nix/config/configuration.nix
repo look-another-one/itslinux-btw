@@ -18,6 +18,7 @@
     ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
     ../../modules/core/zsh.nix
+    ../../modules/core/disk.nix
     #################################################################
     ###                         Programs                          ### 
     #################################################################
