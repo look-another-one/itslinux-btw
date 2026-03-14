@@ -57,5 +57,6 @@
     quickshell
     qt6.qtwayland
     uv
+    antigravity
   ];
 }
