@@ -15,7 +15,6 @@
     mesa
     jetbrains-mono
     nemo
-    brave
     firefox
     wget
     git
@@ -24,7 +23,6 @@
     dysk
     bat
     btop 
-    uv
     python314
     android-tools
     jdk21
@@ -32,8 +30,7 @@
     nodejs
     lazygit
     lazydocker
-     neovim
-    vscodium
+    neovim
     code-cursor
      mpv
     imv
@@ -58,5 +55,6 @@
     qt6.qtwayland
     uv
     antigravity
+    papirus-icon-theme
   ];
 }

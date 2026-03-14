@@ -1,6 +1,6 @@
 # /etc/nixos/grub.nix
 
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   boot.loader = {
@@ -16,13 +16,13 @@
       useOSProber = true;        
       configurationLimit = 10;   
       
-      # The Fallout GRUB Theme
-      theme = pkgs.fetchFromGitHub {
+      # The Fallout GRUB Theme — mkForce overrides stylix's auto theme
+      theme = lib.mkForce (pkgs.fetchFromGitHub {
         owner = "shvchk";
         repo = "fallout-grub-theme";
-        rev = "master"; 
-        hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8="; 
-      };
+        rev = "master";
+        hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
+      });
     };
     
     systemd-boot.enable = false;

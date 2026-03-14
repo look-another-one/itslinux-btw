@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, vars, ... }:
 
 {
   imports = [
@@ -22,9 +22,11 @@
     #################################################################
     ###                         Programs                          ### 
     #################################################################
-    ../../modules/program/niri/default.nix
-    ../../modules/program/keyd/default.nix
-    ../../modules/program/obs-studio/default.nix
+    ../../modules/program/desktop/${vars.desktop}/default.nix
+    ../../modules/program/cli/keyd/default.nix
+    ../../modules/program/media/obs-studio/default.nix
+    ../../modules/program/editor/${vars.editor}/default.nix
+    ../../modules/core/theme.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
@@ -44,6 +46,10 @@
   networking.hostName = "nixos-btw";
   time.timeZone = "Asia/Karachi";
   networking.enableIPv6 = true;
+
+  #### LIX ####
+  # Replace Nix with Lix — a faster, friendlier Nix fork
+  nix.package = pkgs.lixPackageSets.stable.lix;
 
   #### USERS ####
   users.users.yousaytoday = {

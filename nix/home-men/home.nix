@@ -1,11 +1,14 @@
-{ config, pkgs, ... }:
+{ config, pkgs, vars, ... }:
 
 {
   home.username = "yousaytoday";
   home.homeDirectory = "/home/yousaytoday";
   home.stateVersion = "25.05";
 
-  
+ imports = [
+  # ...your existing imports...
+  ../../modules/program/browser/${vars.browser}/default.nix
+ ]; 
   xdg.configFile = {
     "neovim".source     = ../../config/configfiles/nvim;
     "rofi".source     = ../../config/configfiles/rofi;
@@ -19,38 +22,18 @@
    };
 
   home.file.".zshrc".source = ../../config/dotfiles/.zshrc;
-  home.file.".icons".source = ../../config/dotfiles/.icons;
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Adwaita-dark";
-      package = pkgs.gnome-themes-extra;
-    };
-    iconTheme = {
-      name = "icon";
-    };
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
-
-  qt = {
-    enable = true;
-    platformTheme.name = "gtk";
-    style.name = "adwaita-dark";
-    style.package = pkgs.adwaita-qt;
-  };
-
-  home.sessionVariables = {
-    GTK_THEME = "Adwaita-dark";
-  };
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
+    };
+  };
+
+  gtk = {
+    enable = true;
+    iconTheme = {
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus-Dark";
     };
   };
   

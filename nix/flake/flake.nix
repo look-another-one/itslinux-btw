@@ -7,22 +7,31 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
 
 
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: { 
+  outputs = { self, nixpkgs, home-manager, stylix, ... }: 
+  let
+    vars = import ../host/variable.nix;
+  in { 
     
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
-      
+      specialArgs = { inherit vars; };
       modules = [
         ../config/configuration.nix
         home-manager.nixosModules.home-manager
+        stylix.nixosModules.stylix
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
+            extraSpecialArgs = { inherit vars; };
             users.yousaytoday = import ../home-men/home.nix;
             backupFileExtension = "nixbak";
           };
