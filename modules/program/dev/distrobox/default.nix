@@ -1,5 +1,5 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ distrobox ];
+  environment.systemPackages = with pkgs; [ distrobox ];
 }

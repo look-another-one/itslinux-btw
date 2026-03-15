@@ -24,11 +24,10 @@
     #################################################################
     ###                         Programs                          ### 
     #################################################################
-    ../../modules/program/desktop/${vars.desktop}/default.nix
     ../../modules/program/cli/keyd/default.nix
+    ../../modules/program/browser/zen/default.nix
     ../../modules/program/media/obs-studio/default.nix
-    ../../modules/program/editor/${vars.editor}/default.nix
-    ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/languages/java/default.nix
     ../../modules/program/languages/nodejs/default.nix
     ../../modules/program/languages/python/default.nix

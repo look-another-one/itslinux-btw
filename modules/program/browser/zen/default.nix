@@ -1,5 +1,6 @@
-{ pkgs, ... }:
-
+{ pkgs, zen-browser, ... }:
 {
-  home.packages = with pkgs; [ zen-browser ];
+  environment.systemPackages = [
+    zen-browser.packages."${pkgs.system}".default
+  ];
 }

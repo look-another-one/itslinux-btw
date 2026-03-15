@@ -15,12 +15,11 @@
     ../../modules/program/cli/swaync/default.nix
     ../../modules/program/cli/yazi/default.nix
     ../../modules/program/cli/zellij/default.nix
-    ../../modules/program/dev/distrobox/default.nix
     ../../modules/program/media/vesktop/default.nix
+    ../../modules/program/editor/neovim/default.nix
   ];
 
   xdg.configFile = {
-    "neovim".source = ../../config/configfiles/nvim;
     "niri".source   = ../../config/configfiles/niri;
     "starship".source = ../../config/configfiles/starship;
     "kitty".source  = ../../config/configfiles/kitty;
