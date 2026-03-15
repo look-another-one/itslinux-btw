@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    vesktop
     keepassxc
     appimage-run
     scrcpy
@@ -11,49 +10,32 @@
     libreoffice-fresh
     hunspell
     hunspellDicts.en_US
-    distrobox
     mesa
     jetbrains-mono
     nemo
     firefox
     wget
     git
-    fastfetch
     unzip
     dysk
     bat
-    btop 
-    python314
     android-tools
-    jdk21
     conda
-    nodejs
     lazygit
     lazydocker
-    neovim
-    code-cursor
      mpv
     imv
     gimp
     v4l-utils
-    obs-studio
     kitty
     warp-terminal
-    zellij
-    yazi
     nushell
     eza
-    cava
     tty-clock
-    rofi
-    niri
-    swaylock-effects
     swww
-    swaynotificationcenter
     waybar
     quickshell
     qt6.qtwayland
-    uv
     antigravity
     papirus-icon-theme
   ];

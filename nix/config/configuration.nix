@@ -1,4 +1,4 @@
-{ config, pkgs, vars, ... }:
+{ config, pkgs, lib, vars, ... }:
 
 {
   imports = [
@@ -20,6 +20,7 @@
     ../../modules/core/zsh.nix
     ../../modules/core/disk.nix
     ../../modules/core/zram.nix
+    ../../modules/core/theme.nix
     #################################################################
     ###                         Programs                          ### 
     #################################################################
@@ -27,7 +28,10 @@
     ../../modules/program/cli/keyd/default.nix
     ../../modules/program/media/obs-studio/default.nix
     ../../modules/program/editor/${vars.editor}/default.nix
-    ../../modules/core/theme.nix
+    ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/languages/java/default.nix
+    ../../modules/program/languages/nodejs/default.nix
+    ../../modules/program/languages/python/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
@@ -40,7 +44,7 @@
     options = "--delete-older-than 7d";
   };
 
-  # 3. Automatically optimize the Nix store (saves even more space)
+  # Automatically optimize the Nix store (saves even more space)
   nix.settings.auto-optimise-store = true;
 
   #### SYSTEM ####
@@ -64,10 +68,10 @@
   #### NIX ####
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+
   boot.kernelModules = [ "v4l2loopback" ];
   boot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
 
   #### VERSION ####
   system.stateVersion = "25.11";
 }
-

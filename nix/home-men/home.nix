@@ -5,21 +5,26 @@
   home.homeDirectory = "/home/yousaytoday";
   home.stateVersion = "25.05";
 
- imports = [
-  # ...your existing imports...
-  ../../modules/program/browser/${vars.browser}/default.nix
- ]; 
+  imports = [
+    ../../modules/program/browser/${vars.browser}/default.nix
+    ../../modules/program/cli/btop/default.nix
+    ../../modules/program/cli/cava/default.nix
+    ../../modules/program/cli/fastfetch/default.nix
+    ../../modules/program/cli/rofi/default.nix
+    ../../modules/program/cli/swaylock/default.nix
+    ../../modules/program/cli/swaync/default.nix
+    ../../modules/program/cli/yazi/default.nix
+    ../../modules/program/cli/zellij/default.nix
+    ../../modules/program/dev/distrobox/default.nix
+    ../../modules/program/media/vesktop/default.nix
+  ];
+
   xdg.configFile = {
-    "neovim".source     = ../../config/configfiles/nvim;
-    "rofi".source     = ../../config/configfiles/rofi;
-    "swaylock".source = ../../config/configfiles/swaylock;
-    "swaynotificationcenter".source   = ../../config/configfiles/swaync;
-    "cava".source = ../../config/configfiles/cava;
-    "niri".source = ../../config/configfiles/niri;
+    "neovim".source = ../../config/configfiles/nvim;
+    "niri".source   = ../../config/configfiles/niri;
     "starship".source = ../../config/configfiles/starship;
-    "fastfetch".source = ../../config/configfiles/fastfetch;
-    "kitty".source = ../../config/configfiles/kitty;
-   };
+    "kitty".source  = ../../config/configfiles/kitty;
+  };
 
   home.file.".zshrc".source = ../../config/dotfiles/.zshrc;
 
@@ -36,5 +41,4 @@
       name = "Papirus-Dark";
     };
   };
-  
 }
