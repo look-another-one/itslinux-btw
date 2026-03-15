@@ -4,6 +4,5 @@
 
   environment.systemPackages = with pkgs; [
     xwayland-satellite
-    xdg-desktop-portal-gtk
   ];
 }

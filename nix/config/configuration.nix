@@ -28,6 +28,7 @@
     ../../modules/program/browser/zen/default.nix
     ../../modules/program/media/obs-studio/default.nix
     ../../modules/program/editor/vscodium/default.nix
+    ../../modules/program/desktop/niri/default.nix
     ../../modules/program/languages/java/default.nix
     ../../modules/program/languages/nodejs/default.nix
     ../../modules/program/languages/python/default.nix
