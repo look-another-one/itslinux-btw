@@ -16,12 +16,15 @@
 - **Editors**: VSCodium & Neovim
 - **Browsers**: Zen Browser & Brave
 - **CLI/TUI Utilities**:
-  - `yazi` (File Manager)
-  - `zellij` (Terminal Multiplexer)
-  - `btop` (System Monitor)
-  - `fastfetch` (System Info)
-  - `rofi` (App Launcher)
-  - `swaync` (Notification Center)
+
+| Tool | Description |
+| :--- | :--- |
+| `yazi` | File Manager |
+| `zellij` | Terminal Multiplexer |
+| `btop` | System Monitor |
+| `fastfetch` | System Info |
+| `rofi` | App Launcher |
+| `swaync` | Notification Center |
 
 ## 📂 Repository Structure
 
