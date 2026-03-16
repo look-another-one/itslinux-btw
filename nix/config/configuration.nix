@@ -37,6 +37,7 @@
     ../../modules/program/languages/python/default.nix
     # ---------------- Database --------------
     ../../modules/program/db/mysql/default.nix
+    ../../modules/program/dev/tailscale/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
