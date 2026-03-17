@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, freesmlauncher,  ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -38,6 +38,6 @@
     qt6.qtwayland
     antigravity
     papirus-icon-theme
-    hmcl
+    freesmlauncher.packages.x86_64-linux.default
   ];
 }

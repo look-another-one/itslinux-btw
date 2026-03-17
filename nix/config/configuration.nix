@@ -38,6 +38,9 @@
     # ---------------- Database --------------
     ../../modules/program/db/mysql/default.nix
     ../../modules/program/dev/tailscale/default.nix
+    ../../modules/program/dev/distrobox/default.nix
+    # ---------------- Theme --------------
+    ../../modules/program/theme/dms/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################

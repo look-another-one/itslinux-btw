@@ -56,10 +56,6 @@ layout {
     struts {
     }
 }
-layer-rule {
-    match namespace="^swww-daemon$"
-    place-within-backdrop true
-}
 overview {
 	zoom 0.40
     	backdrop-color "#777777"
@@ -67,20 +63,16 @@ overview {
         off
     }
 }
-spawn-at-startup "swaync"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "clear"
-
 environment {
   XDG_CURRENT_DESKTOP "niri"
   QT_QPA_PLATFORM "wayland"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   TERMINAL "kitty"
 }
-cursor {
-    xcursor-theme "cursor"
-    xcursor-size 32
-}
+//cursor {
+//    xcursor-theme "cursor"
+//    xcursor-size 32
+//}
 hotkey-overlay {
     skip-at-startup
 }
@@ -118,6 +110,7 @@ animations {
         spring damping-ratio=0.85 stiffness=800 epsilon=0.0001
     }
 }
+
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
@@ -157,7 +150,7 @@ window-rule {
     open-floating true
 }
 window-rule {
-    geometry-corner-radius 0
+    geometry-corner-radius 20
     clip-to-geometry true
 }
 // Block out password managers from screencasts.
@@ -165,6 +158,10 @@ window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
     block-out-from "screencast"
+}
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
 }
 // Block out mako notifications from screencasts.
 layer-rule {
@@ -176,14 +173,8 @@ binds {
     Mod+D { spawn "niri" "msg" "action" "toggle-overview"; }
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+N { spawn-sh "swaync-client -t"; }
     // === Application Launchers ===
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "rofi" "-show" "drun";
-    }
-    //Mod+V { spawn "nwg-clipman";}
-    Mod+alt+L { spawn-sh "swaylock";}
     Mod+X { spawn-sh "codium"; } 
     // === Security ===
     Mod+Shift+E { quit; }
@@ -206,11 +197,44 @@ binds {
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
+    // Application Launchers
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
+    }
+    Mod+V hotkey-overlay-title="Clipboard Manager" {
+        spawn "dms" "ipc" "call" "clipboard" "toggle";
+    }
+    Mod+Comma hotkey-overlay-title="Settings" {
+        spawn "dms" "ipc" "call" "settings" "focusOrToggle";
+    }
+        
+    Mod+N hotkey-overlay-title="Notification Center" {
+        spawn "dms" "ipc" "call" "notifications" "toggle";
+    }
 
-    // === Application Shortcuts ===
-    //Mod+B {spwan "zen-browser";}
-    //Mod+Z {spwan "nautilus";}
-    // Mod+E {spwan "librewolf";}
+    // Security
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" {
+        spawn "dms" "ipc" "call" "lock" "lock";
+    }
+
+    // Audio Controls
+    XF86AudioRaiseVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "increment" "3";
+    }
+    XF86AudioLowerVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "decrement" "3";
+    }
+    XF86AudioMute allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "mute";
+    }
+
+    // Brightness Controls
+    XF86MonBrightnessUp allow-when-locked=true {
+       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+    }
+    XF86MonBrightnessDown allow-when-locked=true {
+       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+    }
 
 
 
