@@ -38,5 +38,6 @@
     qt6.qtwayland
     antigravity
     papirus-icon-theme
+    hmcl
   ];
 }
