@@ -32,8 +32,6 @@
     nushell
     eza
     tty-clock
-    swww
-    waybar
     quickshell
     qt6.qtwayland
     antigravity

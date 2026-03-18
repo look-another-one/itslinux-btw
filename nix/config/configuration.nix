@@ -9,7 +9,7 @@
     ../../modules/core/networking.nix
     ../../modules/core/ssh.nix
     ../../modules/core/boot.nix
-    ../../modules/core/system-services.nix
+    ../../modules/core/nix.nix
     ../../modules/core/sddm.nix
     ../../modules/core/grub.nix
     ../../modules/core/bluetooth.nix
@@ -17,7 +17,6 @@
     ../../modules/core/flatpak.nix
     ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
-    ../../modules/core/zsh.nix
     ../../modules/core/disk.nix
     ../../modules/core/zram.nix
     ../../modules/core/theme.nix
@@ -37,10 +36,13 @@
     ../../modules/program/languages/python/default.nix
     # ---------------- Database --------------
     ../../modules/program/db/mysql/default.nix
+    # ---------------- Dev --------------
     ../../modules/program/dev/tailscale/default.nix
     ../../modules/program/dev/distrobox/default.nix
     # ---------------- Theme --------------
     ../../modules/program/theme/dms/default.nix
+    # ---------------- Shell --------------
+    ../../modules/program/shell/zsh/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
@@ -65,13 +67,14 @@
   # Replace Nix with Lix — a faster, friendlier Nix fork
   nix.package = pkgs.lixPackageSets.stable.lix;
 
+
   #### USERS ####
   users.users.yousaytoday = {
     isNormalUser = true;
     description = "yousaytoday";
     extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
-    packages = with pkgs; [ ];
-    shell = pkgs.zsh;
+    packages = with pkgs; [ nushell ];
+    shell = pkgs.nushell;
   };
 
   #### NIX ####
