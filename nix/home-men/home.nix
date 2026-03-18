@@ -5,6 +5,14 @@
   home.homeDirectory = "/home/yousaytoday";
   home.stateVersion = "25.05";
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    name = "Bibata-Modern-Classic";
+    package = pkgs.bibata-cursors;
+    size = 24;
+  };
+
   imports = [
     ../../modules/program/browser/${vars.browser}/default.nix
     ../../modules/program/cli/btop/default.nix
@@ -35,9 +43,20 @@
 
   gtk = {
     enable = true;
+    theme = {
+      name = "adw-gtk3-dark";
+      package = pkgs.adw-gtk3;
+    };
     iconTheme = {
       package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
     };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
+    style.name = "adwaita-dark";
+    style.package = pkgs.adwaita-qt;
   };
 }
