@@ -9,8 +9,9 @@ let
 
 in {
   environment.systemPackages = [
-    pythonWithPip   # python3 + pip
-    pkgs.uv         # uv package manager
+    pythonWithPip   
+    pkgs.uv        
+    pkgs.conda         
   ];
 
   environment.shellAliases = {

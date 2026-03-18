@@ -48,11 +48,6 @@
     ../../modules/packages/apps/default.nix
   ];
 
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-  };
 
   # Automatically optimize the Nix store (saves even more space)
   nix.settings.auto-optimise-store = true;

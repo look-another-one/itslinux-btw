@@ -20,16 +20,12 @@
     dysk
     bat
     android-tools
-    conda
-    lazygit
-    lazydocker
-     mpv
+    mpv
     imv
     gimp
     v4l-utils
     kitty
     warp-terminal
-    nushell
     eza
     tty-clock
     quickshell
@@ -37,6 +33,5 @@
     antigravity
     papirus-icon-theme
     freesmlauncher.packages.x86_64-linux.default
-    activitywatch
   ];
 }
