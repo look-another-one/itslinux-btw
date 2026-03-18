@@ -162,7 +162,7 @@ window-rule {
     block-out-from "screencast"
 }
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="^dms:blurwallpaper$"
     place-within-backdrop true
 }
 // Block out mako notifications from screencasts.

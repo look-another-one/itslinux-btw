@@ -29,8 +29,12 @@
       url = "github:noctalia-dev/noctalia-qs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-openclaw = { 
+    	url = "github:openclaw/nix-openclaw";
+	inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-
+  
   outputs = { self, nixpkgs, home-manager, stylix, zen-browser, freesmlauncher, ... }@inputs:
   let
     vars = import ../host/variable.nix;
