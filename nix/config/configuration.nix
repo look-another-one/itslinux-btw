@@ -19,7 +19,6 @@
     ../../modules/core/audio.nix
     ../../modules/core/disk.nix
     ../../modules/core/zram.nix
-    ../../modules/core/theme.nix
     #################################################################
     ###                         Programs                          ### 
     #################################################################
