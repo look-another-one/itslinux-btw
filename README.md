@@ -6,11 +6,11 @@
 > [!WARNING]
 > This is a personal NixOS configuration. Use it at your own risk; everything is hardcoded for my specific needs and hardware.
 
+<div align="center">
 
-<video controls>
-  <source src=".github/rice.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/1fd3dbbc-4e3b-449f-916d-9ed1e9a1ee5b
+
+</div>
 
 <details>
   <summary><strong>Screenshots</strong></summary>
