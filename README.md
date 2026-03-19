@@ -6,10 +6,12 @@
 > [!WARNING]
 > This is a personal NixOS configuration. Use it at your own risk; everything is hardcoded for my specific needs and hardware.
 
+
 <video controls>
   <source src=".github/rice.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
 <details>
   <summary><strong>Screenshots</strong></summary>
 
