@@ -15,7 +15,6 @@ alias ln='nu -c "ls $@"'
 # Scripts
 # -----------------------------------------------------
 
-alias burn="./.Scripts/ISO_Burn/burn.sh"
 
 
 # -----------------------------------------------------
@@ -31,6 +30,5 @@ alias add='git add'
 # -----------------------------------------------------
 # System
 # -----------------------------------------------------
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias nix-sw='sudo nixos-rebuild switch --flake ~/itslinux-btw/nix/flake'
+alias nix-sw='sudo nh os switch ~/itslinux-btw/nix/flake'
 alias update='sudo nix flake update --flake /home/yousaytoday/itslinux-btw/nix/flake/flake.nix'

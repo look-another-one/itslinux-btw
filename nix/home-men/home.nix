@@ -25,6 +25,7 @@
     ../../modules/program/cli/zellij/default.nix
     ../../modules/program/media/vesktop/default.nix
     ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/shell/nushell/default.nix
   ];
 
   xdg.configFile = {
