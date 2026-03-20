@@ -30,7 +30,6 @@
 
   xdg.configFile = {
     "niri".source   = ../../config/configfiles/niri;
-    "starship".source = ../../config/configfiles/starship;
     "kitty".source  = ../../config/configfiles/kitty;
   };
 
