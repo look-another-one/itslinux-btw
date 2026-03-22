@@ -67,8 +67,8 @@
     isNormalUser = true;
     description = "yousaytoday";
     extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
-    packages = with pkgs; [ nushell ];
-    shell = pkgs.nushell;
+    packages = with pkgs; [ zsh ];
+    shell = pkgs.zsh;
   };
 
   #### NIX ####
