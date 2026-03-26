@@ -4,10 +4,14 @@
 
 {
   boot.loader = {
+
+    timeout = 10;
+
     efi = {
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot";
     };
+
     
     grub = {
       enable = true;
