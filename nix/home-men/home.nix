@@ -29,8 +29,11 @@
   ];
 
   xdg.configFile = {
-    "niri".source   = ../../config/configfiles/niri;
-    "kitty".source  = ../../config/configfiles/kitty;
+    "niri".source    = ../../config/configfiles/niri;
+    "kitty".source   = ../../config/configfiles/kitty;
+    "i3".source      = ../../config/configfiles/i3;
+    "rofi".source    = ../../config/configfiles/rofi;
+    "polybar".source = ../../config/configfiles/polybar;
   };
 
   home.file.".zshrc".source = ../../config/dotfiles/.zshrc;
