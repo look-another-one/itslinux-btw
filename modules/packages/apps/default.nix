@@ -33,5 +33,6 @@
     antigravity
     papirus-icon-theme
     freesmlauncher.packages.x86_64-linux.default
+    gitkraken
   ];
 }
