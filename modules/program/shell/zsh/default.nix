@@ -1,9 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+  };
   environment.systemPackages = with pkgs; [
-  starship
+	starship
   ];
 }
 

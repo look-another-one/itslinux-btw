@@ -8,14 +8,14 @@
     #################################################################
     ../../modules/core/networking.nix
     ../../modules/core/ssh.nix
-    ../../modules/core/boot.nix
+    #../../modules/core/boot.nix
     ../../modules/core/nix.nix
     ../../modules/core/sddm.nix
     ../../modules/core/grub.nix
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
     ../../modules/core/flatpak.nix
-    ../../modules/core/virtualisation.nix
+    # ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
     ../../modules/core/disk.nix
     ../../modules/core/zram.nix
@@ -49,7 +49,9 @@
     ../../modules/packages/apps/default.nix
   ];
 
-
+  # Latest Kernal 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+  
   # Automatically optimize the Nix store (saves even more space)
   nix.settings.auto-optimise-store = true;
 
@@ -64,9 +66,9 @@
 
 
   #### USERS ####
-  users.users.yousaytoday = {
+  users.users.humenbeing = {
     isNormalUser = true;
-    description = "yousaytoday";
+    description = "humenbeing";
     extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
     packages = with pkgs; [ zsh ];
     shell = pkgs.zsh;
@@ -76,8 +78,8 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
-  boot.kernelModules = [ "v4l2loopback" ];
-  boot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
+  #boot.kernelModules = [ "v4l2loopback" ];
+  #sboot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
 
   #### VERSION ####
   system.stateVersion = "25.11";

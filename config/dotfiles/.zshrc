@@ -32,4 +32,3 @@ for f in "$ZSHRC_DIR"/*; do
     source "$f"
 done
 
-. "$HOME/.local/bin/env"

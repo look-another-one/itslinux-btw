@@ -1,8 +1,8 @@
 { config, pkgs, vars, ... }:
 
 {
-  home.username = "yousaytoday";
-  home.homeDirectory = "/home/yousaytoday";
+  home.username = "humenbeing";
+  home.homeDirectory = "/home/humenbeing";
   home.stateVersion = "25.05";
 
   home.pointerCursor = {

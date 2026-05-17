@@ -4,7 +4,7 @@ programs.vesktop = {
   enable = true;
   settings = {
     minimizeToTray = true;
-    discordBranch = "stable"; # or "canary"
+    discordBranch = "stable";
   };
   # Vencord plugins
   vencord.settings.plugins = {

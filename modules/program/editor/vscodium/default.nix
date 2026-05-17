@@ -1,6 +1,7 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  imports = [
-    ./vscodium.nix
-  ];
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+  };
 }
