@@ -1,4 +1,4 @@
-{ config, pkgs, lib, vars, ... }:
+{ config, pkgs, lib, vars, user, ... }:
 
 {
   imports = [
@@ -22,7 +22,6 @@
     ###                         Programs                          ### 
     #################################################################
     ../../modules/program/cli/keyd/default.nix
-    ../../modules/program/browser/zen/default.nix
     ../../modules/program/media/obs-studio/default.nix
     # ---------------- Editor --------------
     ../../modules/program/editor/vscodium/default.nix
@@ -65,9 +64,9 @@
 
 
   #### USERS ####
-  users.users.humenbeing = {
+  users.users.${user.username} = {
     isNormalUser = true;
-    description = "humenbeing";
+    description = user.description;
     extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
     packages = with pkgs; [ zsh ];
     shell = pkgs.zsh;

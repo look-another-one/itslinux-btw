@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, user, ... }:
 
 {
   # Enable KVM virtualization
@@ -15,7 +15,7 @@
   programs.virt-manager.enable = true;
 
   # Add your user to libvirtd group
-  users.users.humenbeing.extraGroups = [ "libvirtd" "kvm" ];
+  users.users.${user.username}.extraGroups = [ "libvirtd" "kvm" ];
 
   # Optional: enable spice-vdagentd for clipboard sharing with guests
   services.spice-vdagentd.enable = true;
