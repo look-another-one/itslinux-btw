@@ -29,6 +29,7 @@
             extraSpecialArgs = { inherit inputs vars zen-browser; };
             users.humenbeing = import ../home-men/home.nix;
             backupFileExtension = "nixbak";
+            
           };
         }
       ];

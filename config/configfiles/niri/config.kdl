@@ -114,9 +114,13 @@ animations {
 }
 
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+
+    background-effect {
+        blur true
+        xray true
+    }
 }
+
 window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false

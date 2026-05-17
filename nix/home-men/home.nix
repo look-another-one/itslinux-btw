@@ -43,9 +43,10 @@
       color-scheme = "prefer-dark";
     };
   };
-
+  
   gtk = {
     enable = true;
+    gtk4.theme = config.gtk.theme; 
     theme = {
       name = "adw-gtk3-dark";
       package = pkgs.adw-gtk3;

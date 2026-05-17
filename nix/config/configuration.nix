@@ -8,14 +8,13 @@
     #################################################################
     ../../modules/core/networking.nix
     ../../modules/core/ssh.nix
-    #../../modules/core/boot.nix
     ../../modules/core/nix.nix
     ../../modules/core/sddm.nix
     ../../modules/core/grub.nix
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
     ../../modules/core/flatpak.nix
-    # ../../modules/core/virtualisation.nix
+    ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
     ../../modules/core/disk.nix
     ../../modules/core/zram.nix
@@ -79,7 +78,7 @@
   nixpkgs.config.allowUnfree = true;
 
   #boot.kernelModules = [ "v4l2loopback" ];
-  #sboot.extraModulePackages = [ pkgs.linuxPackages.v4l2loopback ];
+  #sboot.extraModulePacka ges = [ pkgs.linuxPackages.v4l2loopback ];
 
   #### VERSION ####
   system.stateVersion = "25.11";
