@@ -19,8 +19,6 @@
     ../../modules/program/cli/cava/default.nix
     ../../modules/program/cli/fastfetch/default.nix
     ../../modules/program/cli/rofi/default.nix
-    ../../modules/program/cli/swaylock/default.nix
-    ../../modules/program/cli/swaync/default.nix
     ../../modules/program/cli/yazi/default.nix
     ../../modules/program/cli/zellij/default.nix
     ../../modules/program/media/vesktop/default.nix
@@ -31,9 +29,7 @@
   xdg.configFile = {
     "niri".source    = ../../config/configfiles/niri;
     "kitty".source   = ../../config/configfiles/kitty;
-    "i3".source      = ../../config/configfiles/i3;
     "rofi".source    = ../../config/configfiles/rofi;
-    "polybar".source = ../../config/configfiles/polybar;
   };
 
   home.file.".zshrc".source = ../../config/dotfiles/.zshrc;

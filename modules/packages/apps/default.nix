@@ -21,7 +21,6 @@
     mpv
     imv
     gimp
-    v4l-utils
     kitty
     eza
     tty-clock

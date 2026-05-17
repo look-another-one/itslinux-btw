@@ -174,7 +174,7 @@ layer-rule {
     match namespace="^notifications$"
     block-out-from "screencast"
 }
-spawn-at-startup "dms" "run"
+
 
 binds {
     // === System & Overview ===
@@ -186,7 +186,6 @@ binds {
     Mod+X { spawn-sh "codium"; } 
     // === Security ===
     Mod+Shift+E { quit; }
-    Mod+Shift+P {spawn "wlogout";}
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
