@@ -20,9 +20,14 @@ input {
     trackpoint {
     }
 }
-/-output "eDP-2" {
-    mode "2560x1600@239.998993"
-    position x=2560 y=0
+output "PNP(XXX) AAA Unknown" {
+    position x=0 y=0
+    variable-refresh-rate
+}
+
+output "InfoVision Optoelectronics (Kunshan) Co.,Ltd China 0x8544 Unknown" {
+    position x=1366 y=0
+    scale 1.25
     variable-refresh-rate
 }
 layout {
@@ -78,6 +83,7 @@ environment {
 hotkey-overlay {
     skip-at-startup
 }
+
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
