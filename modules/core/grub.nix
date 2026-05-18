@@ -20,7 +20,6 @@
       useOSProber = true;        
       configurationLimit = 10;   
       
-      # The Fallout GRUB Theme — mkForce overrides stylix's auto theme
       theme = lib.mkForce (pkgs.fetchFromGitHub {
         owner = "shvchk";
         repo = "fallout-grub-theme";

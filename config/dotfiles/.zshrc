@@ -8,18 +8,6 @@
 # Zshrc Loader
 # -----------------------------------------------------
 
-# DON'T CHANGE THIS FILE
-
-# You can define your custom configuration by adding
-# files in ~/.config/zshrc
-# or by creating a folder ~/.config/zshrc/custom
-# with copies of files from ~/.config/zshrc
-# -----------------------------------------------------
-
-# -----------------------------------------------------
-# Load modular configuration
-# -----------------------------------------------------
-
 
 ZSHRC_DIR="$HOME/itslinux-btw/config/configfiles/zshrc"
 

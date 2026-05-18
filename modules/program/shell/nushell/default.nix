@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, user, ... }:
 
 {
   programs.nushell = {
@@ -22,8 +22,8 @@
       add  = "git add";
 
       # System
-      nix-sw = "nh os switch ~/itslinux-btw/nix/flake";
-      update = "nh os switch ~/itslinux-btw/nix/flake -- --recreate-lock-file";
+      nix-sw = "nh os switch ${user.flakeDirectory}/nix/flake";
+      update = "nh os switch ${user.flakeDirectory}/nix/flake -- --recreate-lock-file";
       clean  = "nh clean all --keep 4";
     };
     extraConfig = ''

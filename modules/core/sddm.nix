@@ -4,23 +4,22 @@
     enable = true;
     wayland.enable = true;
     package = pkgs.kdePackages.sddm;
-    theme = "SilentSDDM";  # ← folder name must match exactly
+    theme = "SilentSDDM"; 
 
     extraPackages = with pkgs.kdePackages; [
       qtdeclarative
       qtsvg
       qtmultimedia
-      pkgs.kdePackages.qtvirtualkeyboard
-      # qt5compat   # ← add this if you see import/version errors later
+      pkgs.kdePackages.qtvirtualkeyboard  
     ];
   };
 
   environment.systemPackages = [
-    (pkgs.stdenvNoCC.mkDerivation {   # ← stdenvNoCC is faster / cleaner for pure data
+    (pkgs.stdenvNoCC.mkDerivation {   
       name = "sddm-theme-silentsddm";
       src = ../../config/themes/SilentSDDM;
 
-      dontUnpack = true;   # ← optional but good if src is already ready
+      dontUnpack = true;   
 
       installPhase = ''
         runHook preInstall

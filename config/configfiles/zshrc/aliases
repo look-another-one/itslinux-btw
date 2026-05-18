@@ -30,5 +30,6 @@ alias add='git add'
 # -----------------------------------------------------
 # System
 # -----------------------------------------------------
-alias nix-sw='nh os switch ~/itslinux-btw/nix/flake'
-alias update='sudo nix flake update --flake /home/yousaytoday/itslinux-btw/nix/flake/flake.nix'
+alias nix-sw='nh os switch'
+alias nix-boot='nh os boot'
+alias update='sudo nix flake update --flake $FLAKE_DIR/nix/flake/flake.nix'

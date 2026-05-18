@@ -24,13 +24,9 @@
     ../../modules/program/cli/keyd/default.nix
     ../../modules/program/media/obs-studio/default.nix
     # ---------------- Editor --------------
-    ../../modules/program/editor/vscodium/default.nix
+    # Moved to home-manager level to support declarative extensions
     # ---------------- Desktop Enviroment --------------
-    ../../modules/program/desktop/niri/default.nix
-    # ---------------- Languages --------------
-    ../../modules/program/languages/java/default.nix
-    ../../modules/program/languages/nodejs/default.nix
-    ../../modules/program/languages/python/default.nix
+    ../../modules/program/desktop/${vars.desktop}/default.nix
     # ---------------- Database --------------
     ../../modules/program/db/mysql/default.nix
     # ---------------- Dev --------------
@@ -44,7 +40,7 @@
     ###                         Packages                          ### 
     #################################################################
     ../../modules/packages/apps/default.nix
-  ];
+  ] ++ (builtins.map (lang: ../../modules/program/languages/${lang}/default.nix) (builtins.attrNames vars.languages));
 
   # Latest Kernal 
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -74,6 +70,12 @@
   #### NIX ####
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+
+  #### Fingerprint ####
+  services.fprintd = {
+    enable = true;
+  };
+
 
   #boot.kernelModules = [ "v4l2loopback" ];
   #sboot.extraModulePacka ges = [ pkgs.linuxPackages.v4l2loopback ];
