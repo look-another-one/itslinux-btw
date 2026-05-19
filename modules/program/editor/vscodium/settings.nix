@@ -10,4 +10,8 @@
       "path" = "${pkgs.zsh}/bin/zsh";
     };
   };
+  "code-runner.clearPreviousOutput" = true;
+  "workbench.iconTheme" = "vscode-icons";
+  "editor.fontFamily" = "JetBrains Mono, Cascadia Code, monospace";
+
 }

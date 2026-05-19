@@ -76,10 +76,6 @@ environment {
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   TERMINAL "kitty"
 }
-//cursor {
-//    xcursor-theme "cursor"
-//    xcursor-size 32
-//}
 hotkey-overlay {
     skip-at-startup
 }

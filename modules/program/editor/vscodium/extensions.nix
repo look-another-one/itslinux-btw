@@ -6,6 +6,9 @@ with vscodeExts.vscode-marketplace; [
   formulahendry.code-runner
   vscode-icons-team.vscode-icons
   mechatroner.rainbow-csv
+  redcmd.json-embedded-languages
   vscodevim.vim
-  magicstack.magicpython
+  oderwat.indent-rainbow
+  yzhang.markdown-all-in-one
+  ms-azuretools.vscode-docker
 ]
