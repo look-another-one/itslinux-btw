@@ -7,5 +7,6 @@
     nodejs = "20";
     python = "314";
     java = "21";
+    cpp = "20";
   };
 }

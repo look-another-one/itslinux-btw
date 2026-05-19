@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/1fd3dbbc-4e3b-449f-916d-9ed1e9a1ee5b
 - **Display Manager**: SDDM
 - **Theming**: Adwaita Dark GTK/QT theme with custom modules
 - **Editors**: VSCodium & Neovim
-- **Browsers**: Zen Browser & Brave
+- **Browsers**: Brave
 
 ## 🛠️ Tools & Applications
 
@@ -46,7 +46,7 @@ Here is a comprehensive list of the primary tools and utilities used in this con
 ### Utilities & CLI
 | Tool | Description |
 | :--- | :--- |
-| `yazi`, `nemo` | File Managers |
+| `nemo` | File Managers |
 | `btop`, `fastfetch` | System Monitors |
 | `git`, `lazygit` | Version Control |
 | `bat`, `eza`, `unzip` | Command-line Utilities |
@@ -75,7 +75,7 @@ Here is a comprehensive list of the primary tools and utilities used in this con
 | `distrobox` | Container Environment |
 | `tailscale` | VPN & Mesh Network |
 | `mysql` | Database System |
-| `nodejs`, `python`, `java` | Programming Languages |
+| `nodejs`, `python`, `java`, `C++` | Programming Languages |
 
 ## 📂 Repository Structure
 
@@ -92,6 +92,6 @@ The configuration is organized into a modular tree for easier maintainability:
 │   ├── config/         # Global NixOS configuration files
 │   ├── flake/          # Flake definition (inputs/outputs)
 │   ├── home-men/       # Home Manager configuration
-│   └── host/           # Host-specific variables (variable.nix)
+│   └── host/           # Host-specific variables
 └── assets/             # Wallpapers and other static assets
 ```
