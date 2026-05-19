@@ -10,7 +10,6 @@
     hunspell
     hunspellDicts.en_US
     mesa
-    jetbrains-mono
     nemo
     wget
     git
