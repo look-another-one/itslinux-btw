@@ -8,20 +8,8 @@ in {
     enable = true;
 
     profiles.default = {
-      extensions = [
-        vscodeExts.vscode-marketplace.eamodio.gitlens
-        vscodeExts.vscode-marketplace.ms-python.python
-        vscodeExts.vscode-marketplace.rust-lang.rust-analyzer
-      ];
-
-      userSettings = {
-        "terminal.integrated.defaultProfile.linux" = "nushell";
-        "terminal.integrated.profiles.linux" = {
-          "nushell" = {
-            "path" = "${pkgs.nushell}/bin/nu";
-          };
-        };
-      };
+      extensions = import ./extensions.nix { inherit vscodeExts; };
+      userSettings = import ./settings.nix { inherit pkgs; };
     };
   };
 }

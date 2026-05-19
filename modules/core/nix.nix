@@ -7,7 +7,6 @@
     clean.extraArgs = "--keep-since 3d --keep 3";
     flake = "${user.flakeDirectory}/nix/flake/"; 
   };
-
   programs.nix-ld.enable = true;
 
 }
