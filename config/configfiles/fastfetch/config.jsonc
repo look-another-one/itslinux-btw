@@ -46,19 +46,19 @@
             "type": "os"
         },
         {
-            "key": "│ {#35} kernel   {#keys}│",
+            "key": "│ {#35}󰌽 kernel  {#keys}│",
             "type": "kernel"
         },
         {
-            "key": "│ {#36} wm       {#keys}│",
+            "key": "│ {#36}󰦞 wm      {#keys}│",
             "type": "wm"
         },
         {
-            "key": "│ {#31} term     {#keys}│",
+            "key": "│ {#31}󱃀 term    {#keys}│",
             "type": "terminal"
         },
         {
-            "key": "│ {#32} shell    {#keys}│",
+            "key": "│ {#32}󰨞 shell   {#keys}│",
             "type": "shell"
         },
         {
@@ -102,7 +102,7 @@
             "folders": "/"
         },
         {
-            "key": "│ {#31} memory   {#keys}│",
+            "key": "│ {#31}󰇞 memory  {#keys}│",
             "type": "memory"
         },
         {
