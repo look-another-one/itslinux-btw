@@ -25,6 +25,12 @@
     ../../modules/program/editor/neovim/default.nix
     ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/shell/nushell/default.nix
+    ../../modules/program/editor/antigravity/default.nix
+    ../../modules/program/cli/kitty/default.nix
+    ../../modules/program/dev/android-tools/default.nix
+    ../../modules/program/media/localsend/default.nix
+    ../../modules/program/media/keepassxc/default.nix
+    ../../modules/program/media/nemo/default.nix
   ];
 
   xdg.configFile = {

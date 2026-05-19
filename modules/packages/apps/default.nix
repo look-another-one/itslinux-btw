@@ -2,30 +2,18 @@
 
 {
   environment.systemPackages = with pkgs; [
-    keepassxc
-    appimage-run
     scrcpy
-    localsend
-    glib
-    hunspell
-    hunspellDicts.en_US
-    mesa
-    nemo
     wget
     git
     unzip
     dysk
     bat
-    android-tools
     mpv
     imv
-    gimp
-    kitty
     eza
     tty-clock
     quickshell
     qt6.qtwayland
-    antigravity
     papirus-icon-theme
     ];
 }
