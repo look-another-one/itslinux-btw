@@ -24,6 +24,7 @@
     ../../modules/program/media/vesktop/default.nix
     ../../modules/program/editor/neovim/default.nix
     ../../modules/program/editor/vscodium/default.nix
+    ../../modules/program/editor/obsidian/default.nix
     ../../modules/program/shell/nushell/default.nix
   ];
 
