@@ -4,6 +4,8 @@ let
   browserDesktop = if vars.browser == "brave" then "brave-browser.desktop" else "${vars.browser}.desktop";
   editorDesktop = if vars.editor == "vscodium" then "codium.desktop" else if vars.editor == "neovim" then "nvim.desktop" else "${vars.editor}.desktop";
   editorCmd = if vars.editor == "vscodium" then "codium" else vars.editor;
+  imageViewerDesktop = "${vars.imageViewer}.desktop";
+  videoPlayerDesktop = "${vars.videoPlayer}.desktop";
 in
 {
   home.sessionVariables = {
@@ -28,6 +30,23 @@ in
       "application/xhtml+xml" = [ browserDesktop ];
       "application/x-extension-xhtml" = [ browserDesktop ];
       "application/x-extension-xht" = [ browserDesktop ];
+      
+      # Image Viewer
+      "image/png" = [ imageViewerDesktop ];
+      "image/jpeg" = [ imageViewerDesktop ];
+      "image/gif" = [ imageViewerDesktop ];
+      "image/webp" = [ imageViewerDesktop ];
+      "image/bmp" = [ imageViewerDesktop ];
+      "image/tiff" = [ imageViewerDesktop ];
+      
+      # Video Player
+      "video/mp4" = [ videoPlayerDesktop ];
+      "video/mpeg" = [ videoPlayerDesktop ];
+      "video/quicktime" = [ videoPlayerDesktop ];
+      "video/x-matroska" = [ videoPlayerDesktop ];
+      "video/x-msvideo" = [ videoPlayerDesktop ];
+      "video/webm" = [ videoPlayerDesktop ];
+      "video/ogg" = [ videoPlayerDesktop ];
     };
   };
 }

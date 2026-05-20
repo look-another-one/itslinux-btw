@@ -2,6 +2,8 @@
   browser = "brave";
   editor = "vscodium";
   desktop = "niri";
+  imageViewer = "imv";
+  videoPlayer = "mpv";
   # Languages
   languages = {
     nodejs = "20";
