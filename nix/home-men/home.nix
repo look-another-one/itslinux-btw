@@ -22,11 +22,11 @@
     ../../modules/program/cli/rofi/default.nix
     ../../modules/program/cli/zellij/default.nix
     ../../modules/program/media/vesktop/default.nix
-    ../../modules/program/editor/neovim/default.nix
     ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/shell/nushell/default.nix
     ../../modules/program/editor/antigravity/default.nix
     ../../modules/program/cli/kitty/default.nix
+    ../../modules/program/cli/tty-clock/default.nix
     ../../modules/program/dev/android-tools/default.nix
     ../../modules/program/media/localsend/default.nix
     ../../modules/program/media/keepassxc/default.nix
