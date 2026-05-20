@@ -9,9 +9,10 @@
     };
     
     enableSystemMonitoring = true; 
-    enableVPN = true;                  
-    enableDynamicTheming = true;       
-    enableClipboardPaste = true;       
+    enableVPN = true;                      
+    enableClipboardPaste = true;
+    enableCalendarEvents = false;
+          
   };
   powerManagement.enable = true; 
   services.thermald.enable = true; 
