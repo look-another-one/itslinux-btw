@@ -22,13 +22,12 @@ input {
 }
 output "PNP(XXX) AAA Unknown" {
     position x=0 y=0
-    variable-refresh-rate
+    scale 1
 }
 
 output "InfoVision Optoelectronics (Kunshan) Co.,Ltd China 0x8544 Unknown" {
     position x=1366 y=0
     scale 1.25
-    variable-refresh-rate
 }
 layout {
     gaps 8
@@ -349,7 +348,7 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     // === Manual Sizing ===
-    Mod+Minus { set-column-width "-10%"; }
+    Mod+Minus { set-column-width "-10%";  }
     Mod+Equal { set-column-width "+10%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
