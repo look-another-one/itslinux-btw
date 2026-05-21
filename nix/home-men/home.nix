@@ -39,6 +39,9 @@
     "rofi".source    = ../../config/configfiles/rofi;
   };
 
+  home.file.".face".source = user.avatar;
+  home.file.".face.icon".source = user.avatar;
+
   home.file.".zshrc".text = ''
     # Zshrc Loader
     export FLAKE_DIR="${user.flakeDirectory}"
