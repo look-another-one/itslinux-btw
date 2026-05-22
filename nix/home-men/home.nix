@@ -31,6 +31,7 @@
     ../../modules/program/media/localsend/default.nix
     ../../modules/program/media/keepassxc/default.nix
     ../../modules/program/media/nemo/default.nix
+    ../../modules/program/cli/starship/default.nix
   ];
 
   xdg.configFile = {
