@@ -14,4 +14,5 @@
   "workbench.iconTheme" = "vscode-icons";
   "editor.fontFamily" = "JetBrains Mono, Cascadia Code, monospace";
   "terminal.integrated.fontFamily" = "JetBrainsMono Nerd Font";
+  "workbench.colorTheme" = "Dracula Theme";
 }
