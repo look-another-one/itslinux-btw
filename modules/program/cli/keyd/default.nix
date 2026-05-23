@@ -10,8 +10,13 @@
 
         settings = {
           main = {
-            up    = "slash";
-            slash = "up";
+            # CapsLock <-> Esc
+            capslock = "esc";
+            esc      = "capslock";
+
+            # Up Arrow <-> /?
+            up       = "slash";
+            slash    = "up";
           };
         };
       };
