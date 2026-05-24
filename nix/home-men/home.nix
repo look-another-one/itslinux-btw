@@ -32,6 +32,8 @@
     ../../modules/program/media/keepassxc/default.nix
     ../../modules/program/media/nemo/default.nix
     ../../modules/program/cli/starship/default.nix
+    ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/cli/lazygit/default.nix
   ];
 
   xdg.configFile = {

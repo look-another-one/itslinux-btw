@@ -2,5 +2,5 @@
 
 {
   home.packages = with pkgs; [ neovim ];
-  xdg.configFile."neovim".source = ../../../../config/configfiles/nvim;
+  # xdg.configFile."neovim".source = ../../../../config/configfiles/nvim;
 }
