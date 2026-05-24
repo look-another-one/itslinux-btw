@@ -11,4 +11,6 @@ with vscodeExts.vscode-marketplace; [
   oderwat.indent-rainbow
   yzhang.markdown-all-in-one
   ms-azuretools.vscode-docker
+  ms-toolsai.jupyter
+  dracula-theme.theme-dracula
 ]
