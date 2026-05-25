@@ -34,6 +34,7 @@
     ../../modules/program/cli/starship/default.nix
     ../../modules/program/editor/neovim/default.nix
     ../../modules/program/cli/lazygit/default.nix
+    ../../modules/program/productivity/activitywatch/default.nix
   ];
 
   xdg.configFile = {
