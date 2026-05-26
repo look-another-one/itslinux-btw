@@ -3,38 +3,32 @@
 {
   home.username = user.username;
   home.homeDirectory = user.homeDirectory;
-  home.stateVersion = "25.05";
+  home.stateVersion = vars.homeStateVersion;
 
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
-    name = "Bibata-Modern-Classic";
-    package = pkgs.bibata-cursors;
-    size = 24;
+    name = vars.cursor.name;
+    package = pkgs.${vars.cursor.package};
+    size = vars.cursor.size;
   };
 
   imports = [
     ./default_apps.nix
-    ../../modules/program/browser/${vars.browser}/default.nix
+    ../../modules/program/browser/brave/default.nix
     ../../modules/program/cli/btop/default.nix
-    ../../modules/program/cli/cava/default.nix
     ../../modules/program/cli/fastfetch/default.nix
     ../../modules/program/cli/rofi/default.nix
-    ../../modules/program/cli/zellij/default.nix
-    ../../modules/program/media/vesktop/default.nix
     ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/shell/nushell/default.nix
     ../../modules/program/editor/antigravity/default.nix
     ../../modules/program/cli/kitty/default.nix
-    ../../modules/program/cli/tty-clock/default.nix
     ../../modules/program/dev/android-tools/default.nix
     ../../modules/program/media/localsend/default.nix
     ../../modules/program/media/keepassxc/default.nix
     ../../modules/program/media/nemo/default.nix
     ../../modules/program/cli/starship/default.nix
     ../../modules/program/editor/neovim/default.nix
-    ../../modules/program/cli/lazygit/default.nix
-    ../../modules/program/productivity/activitywatch/default.nix
   ];
 
   xdg.configFile = {

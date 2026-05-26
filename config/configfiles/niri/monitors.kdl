@@ -1,0 +1,9 @@
+output "PNP(XXX) AAA Unknown" {
+    position x=0 y=0
+    scale 1
+}
+
+output "InfoVision Optoelectronics (Kunshan) Co.,Ltd China 0x8544 Unknown" {
+    position x=1366 y=0
+    scale 1.25
+}

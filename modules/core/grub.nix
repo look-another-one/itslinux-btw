@@ -1,10 +1,6 @@
-# /etc/nixos/grub.nix
+{ config, lib, pkgs, ... }: {
 
-{ config, lib, pkgs, ... }:
-
-{
   boot.loader = {
-
     timeout = 10;
 
     efi = {
@@ -12,14 +8,13 @@
       efiSysMountPoint = "/boot";
     };
 
-    
     grub = {
       enable = true;
-      device = "nodev";          
+      device = "nodev";
       efiSupport = true;
-      useOSProber = true;        
-      configurationLimit = 10;   
-      
+      useOSProber = true;
+      configurationLimit = 10;
+
       theme = lib.mkForce (pkgs.fetchFromGitHub {
         owner = "shvchk";
         repo = "fallout-grub-theme";
@@ -27,7 +22,8 @@
         hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
       });
     };
-    
+
     systemd-boot.enable = false;
   };
 }
+
