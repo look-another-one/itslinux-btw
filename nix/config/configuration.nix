@@ -9,7 +9,7 @@
     ../../modules/core/networking.nix
     ../../modules/core/ssh.nix
     ../../modules/core/nix.nix
-    ../../modules/core/sddm.nix
+    ../../modules/core/greetd.nix
     ../../modules/core/grub.nix
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
