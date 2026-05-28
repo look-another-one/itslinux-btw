@@ -12,6 +12,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    otter-launcher = {
+      url = "github:kuokuo123/otter-launcher";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

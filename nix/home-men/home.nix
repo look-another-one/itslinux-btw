@@ -29,6 +29,7 @@
     ../../modules/program/media/nemo/default.nix
     ../../modules/program/cli/starship/default.nix
     ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/cli/otter-launcher/default.nix
   ];
 
   xdg.configFile = {
