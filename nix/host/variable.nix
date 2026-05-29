@@ -21,7 +21,7 @@
 
   # Languages
   languages = {
-    nodejs = "20";
+    nodejs = "22";
     python = "314";
     cpp = "20";
   };

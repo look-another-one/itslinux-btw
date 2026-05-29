@@ -30,9 +30,6 @@ binds {
     Mod+Space hotkey-overlay-title="Application Launcher" {
 	spawn "rofi" "-show" "drun";
     }
-    Mod+Shift+Space hotkey-overlay-title="Otter Launcher" {
-        spawn "kitty" "--class=otter-launcher" "--" "otter-launcher";
-    }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
     }
