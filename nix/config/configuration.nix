@@ -9,8 +9,9 @@
     ../../modules/core/networking.nix
     ../../modules/core/ssh.nix
     ../../modules/core/nix.nix
+    ../../modules/core/user.nix
     ../../modules/core/greetd.nix
-    ../../modules/core/grub.nix
+    ../../modules/core/systemd-boot.nix
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
     ../../modules/core/flatpak.nix
@@ -37,31 +38,19 @@
     ../../modules/packages/apps/default.nix
   ] ++ (builtins.map (lang: ../../modules/program/languages/${lang}/default.nix) (builtins.attrNames vars.languages));
 
-  nix.settings.auto-optimise-store = true;
+
 
   #### SYSTEM ####
   networking.hostName = vars.hostName;
   time.timeZone = vars.timeZone;
   networking.enableIPv6 = true;
 
-  #### LIX ####
-  nix.package = pkgs.lixPackageSets.stable.lix;
+
 
   # Latest Kernal 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   
-  #### USERS ####
-  users.users.${user.username} = {
-    isNormalUser = true;
-    description = user.description;
-    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
-    packages = with pkgs; [ zsh ];
-    shell = pkgs.zsh;
-  };
 
-  #### NIX ####
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = vars.stateVersion;
 }
