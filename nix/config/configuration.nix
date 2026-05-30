@@ -45,12 +45,5 @@
   time.timeZone = vars.timeZone;
   networking.enableIPv6 = true;
 
-
-
-  # Latest Kernal 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  
-
-
   system.stateVersion = vars.stateVersion;
 }
