@@ -12,6 +12,9 @@
     ../../modules/core/user.nix
     ../../modules/core/greetd.nix
     ../../modules/core/systemd-boot.nix
+    ../../modules/core/boot.nix
+    ../../modules/core/systemd.nix
+    ../../modules/core/security.nix
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
     ../../modules/core/flatpak.nix

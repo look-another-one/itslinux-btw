@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }: {
 
   boot.loader = {
-    timeout = 1;
+    timeout = 0;
 
     efi = {
       canTouchEfiVariables = true;
@@ -10,7 +10,9 @@
 
     systemd-boot = {
       enable = true;
-      configurationLimit = 5;
+      configurationLimit = 10;
+      editor = false;
+      consoleMode = "max";
     };
 
     grub.enable = false;
