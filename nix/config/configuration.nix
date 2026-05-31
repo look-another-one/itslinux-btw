@@ -32,7 +32,7 @@
     # ---------------- Desktop Enviroment --------------
     ../../modules/program/desktop/${vars.desktop}/default.nix
     # ---------------- Theme --------------
-    ../../modules/program/theme/dms/default.nix
+    ../../modules/program/theme/noctalia/system.nix
     # ---------------- Shell --------------
     ../../modules/program/shell/zsh/default.nix
     #################################################################
