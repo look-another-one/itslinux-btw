@@ -35,6 +35,8 @@
     ../../modules/program/theme/noctalia/system.nix
     # ---------------- Shell --------------
     ../../modules/program/shell/zsh/default.nix
+    # ---------------- Dev --------------
+    ../../modules/program/dev/ollama/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
