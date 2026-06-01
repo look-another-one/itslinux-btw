@@ -152,6 +152,19 @@
             "textColor": "none"
           },
           {
+            "displayMode": "onhover",
+            "iconColor": "none",
+            "id": "Bluetooth",
+            "textColor": "none"
+          },
+          {
+            "displayMode": "onhover",
+            "iconColor": "none",
+            "id": "Volume",
+            "middleClickCommand": "pwvucontrol || pavucontrol",
+            "textColor": "none"
+          },
+          {
             "iconColor": "none",
             "id": "PowerProfile"
           }
@@ -676,31 +689,32 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg"
+      "eDP-1": "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg",
+      "DP-1": "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
       "eDP-1": {
-        "name": "eDP-1",
         "connected": true,
-        "scale": 1.25,
-        "width": 1536,
         "height": 864,
-        "x": 1366,
-        "y": 0,
-        "physical_width": 290,
+        "name": "eDP-1",
         "physical_height": 170,
+        "physical_width": 290,
         "refresh_rate": 60010,
-        "vrr_supported": false,
+        "scale": 1.25,
+        "transform": "Normal",
         "vrr_enabled": false,
-        "transform": "Normal"
+        "vrr_supported": false,
+        "width": 1536,
+        "x": 1366,
+        "y": 0
       }
     },
     "notificationsState": {
       "lastSeenTs": 1780219710000
     },
     "changelogState": {
-      "lastSeenVersion": "v4.7.8"
+      "lastSeenVersion": "v4.7.8-git"
     },
     "colorSchemesList": {
       "schemes": [],
