@@ -10,7 +10,6 @@
     ../../modules/program/browser/brave/default.nix
     ../../modules/program/cli/btop/default.nix
     ../../modules/program/cli/fastfetch/default.nix
-    ../../modules/program/cli/rofi/default.nix
     ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/shell/nushell/default.nix
     ../../modules/program/editor/antigravity/default.nix
