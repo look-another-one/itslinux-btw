@@ -3,24 +3,24 @@
     "settingsVersion": 59,
     "bar": {
       "barType": "simple",
-      "position": "right",
+      "position": "top",
       "monitors": [],
       "density": "comfortable",
-      "showOutline": false,
+      "showOutline": true,
       "showCapsule": true,
       "capsuleOpacity": 1,
       "capsuleColorKey": "none",
       "widgetSpacing": 6,
-      "contentPadding": 2,
+      "contentPadding": 0,
       "fontScale": 1,
-      "enableExclusionZoneInset": true,
+      "enableExclusionZoneInset": false,
       "backgroundOpacity": 0,
       "useSeparateOpacity": false,
       "marginVertical": 4,
       "marginHorizontal": 4,
       "frameThickness": 8,
       "frameRadius": 12,
-      "outerCorners": true,
+      "outerCorners": false,
       "hideOnOverview": false,
       "displayMode": "always_visible",
       "autoHideDelay": 500,
@@ -93,7 +93,7 @@
         ],
         "right": [
           {
-            "compactMode": true,
+            "compactMode": false,
             "diskPath": "/",
             "iconColor": "none",
             "id": "SystemMonitor",
@@ -370,30 +370,12 @@
       "shortcuts": {
         "left": [
           {
-            "id": "Network"
-          },
-          {
-            "id": "Bluetooth"
-          },
-          {
-            "id": "WallpaperSelector"
-          },
-          {
             "id": "NoctaliaPerformance"
           }
         ],
         "right": [
           {
-            "id": "Notifications"
-          },
-          {
-            "id": "PowerProfile"
-          },
-          {
             "id": "KeepAwake"
-          },
-          {
-            "id": "NightLight"
           }
         ]
       },
@@ -403,7 +385,7 @@
           "id": "profile-card"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "id": "shortcuts-card"
         },
         {
@@ -415,7 +397,7 @@
           "id": "brightness-card"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "id": "weather-card"
         },
         {

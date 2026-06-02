@@ -13,4 +13,5 @@ with vscodeExts.vscode-marketplace; [
   ms-azuretools.vscode-docker
   ms-toolsai.jupyter
   dracula-theme.theme-dracula
+  jnoortheen.nix-ide
 ]
