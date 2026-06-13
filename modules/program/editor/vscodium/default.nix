@@ -12,4 +12,8 @@ in {
       userSettings = import ./settings.nix { inherit pkgs; };
     };
   };
+  
+  home.packages = [
+    pkgs.nixd 
+  ];
 }

@@ -10,8 +10,7 @@ with vscodeExts.vscode-marketplace; [
   vscodevim.vim
   oderwat.indent-rainbow
   yzhang.markdown-all-in-one
-  ms-azuretools.vscode-docker
   ms-toolsai.jupyter
-  dracula-theme.theme-dracula
   jnoortheen.nix-ide
+  eamodio.gitlens
 ]
