@@ -18,7 +18,6 @@
     ../../modules/core/bluetooth.nix
     ../../modules/core/printing.nix
     ../../modules/core/flatpak.nix
-    ../../modules/core/virtualisation.nix
     ../../modules/core/audio.nix
     ../../modules/core/disk.nix
     ../../modules/core/fonts.nix
