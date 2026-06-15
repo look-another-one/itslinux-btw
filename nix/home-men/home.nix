@@ -22,5 +22,6 @@
     ../../modules/program/editor/neovim/default.nix
     ../../modules/core/theme.nix
     ../../modules/program/theme/noctalia/default.nix
+    ../../modules/program/cli/yazi/default.nix
   ];
 }
