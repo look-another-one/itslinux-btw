@@ -36,6 +36,7 @@
     ../../modules/program/shell/zsh/default.nix
     # ---------------- Dev --------------
     ../../modules/program/dev/ollama/default.nix
+    ../../modules/program/dev/mysql/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
