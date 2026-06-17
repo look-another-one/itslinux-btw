@@ -110,7 +110,7 @@ animations {
 include "window-rules.kdl"
 include "monitors.kdl"
 include "keybinds.kdl"
-spawn-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
 
 debug {
     honor-xdg-activation-with-invalid-serial

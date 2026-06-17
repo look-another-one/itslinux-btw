@@ -1,12 +1,11 @@
-{ inputs, user, ... }:
+{ inputs, ... }:
 
 {
   imports = [
     inputs.noctalia.homeModules.default
   ];
 
-  programs.noctalia-shell = {
+  programs.noctalia = {
     enable = true;
-    settings = (builtins.fromJSON (builtins.readFile ../../../../config/configfiles/noctalia/state.json)).settings;
   };
 }

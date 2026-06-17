@@ -4,20 +4,7 @@
 </div>
 
 > [!WARNING]
-> This is a personal NixOS configuration. Use it at your own risk; everything is hardcoded for my specific needs and hardware.
-
-<div align="center">
-
-https://github.com/user-attachments/assets/1fd3dbbc-4e3b-449f-916d-9ed1e9a1ee5b
-
-</div>
-
-<details>
-  <summary><strong>Screenshots</strong></summary>
-
-  ### SDDM
-
-  ![SDDM Screenshot](.github/sddm.png)
+> This is a personal NixOS configuration. Use it at your own risk; everything is hardcoded for my specific needs and hardware, and README is not uptodate.
 
 </details>
 
@@ -25,8 +12,8 @@ https://github.com/user-attachments/assets/1fd3dbbc-4e3b-449f-916d-9ed1e9a1ee5b
 
 - **OS**: [NixOS](https://nixos.org/) (Unstable, powered by [Lix](https://lix.systems/))
 - **Management**: Nix Flakes & Home-Manager
-- **Compositor**: [Niri](https://github.com/YaLTeR/niri) (Scrollable-tiling Wayland compositor) with [DMS](https://github.com/AvengeMedia/DankMaterialShell)
-- **Display Manager**: SDDM
+- **Compositor**: [Niri](https://github.com/YaLTeR/niri) (Scrollable-tiling Wayland compositor) with [Noctalia](https://noctalia.dev)
+- **Display Manager**: greetd
 - **Theming**: Adwaita Dark GTK/QT theme with custom modules
 - **Editors**: VSCodium & Neovim
 - **Browsers**: Brave
@@ -40,7 +27,6 @@ Here is a comprehensive list of the primary tools and utilities used in this con
 | :--- | :--- |
 | `kitty` | Terminal Emulator |
 | `nushell`, `zsh` | Shell Environments |
-| `zellij` | Terminal Multiplexer |
 | `starship` | Shell Prompt |
 
 ### Utilities & CLI
@@ -56,26 +42,21 @@ Here is a comprehensive list of the primary tools and utilities used in this con
 ### Desktop Environment
 | Tool | Description |
 | :--- | :--- |
-| `DMS` | Desktop Shell |
+| `noctalia` | Desktop Shell |
 
 ### GUI Applications
 | Tool | Description |
 | :--- | :--- |
-| `vesktop` | Discord Client |
 | `obs-studio` | Screen Recorder/Broadcasting |
-| `mpv`, `imv` | Media Players & Image Viewers |
-| `gimp` | Image Editor |
 | `keepassxc` | Password Manager |
-| `libreoffice` | Office Suite |
 | `scrcpy`, `localsend` | Device Utilities |
 
 ### Development
 | Tool | Description |
 | :--- | :--- |
-| `distrobox` | Container Environment |
 | `tailscale` | VPN & Mesh Network |
 | `mysql` | Database System |
-| `nodejs`, `python`, `java`, `C++` | Programming Languages |
+| `nodejs`, `python`, `C++` | Programming Languages |
 
 ## 📂 Repository Structure
 

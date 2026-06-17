@@ -1,0 +1,162 @@
+[backdrop]
+enabled = true
+tint_intensity = 0.0
+
+[bar]
+order = [ "widgets" ]
+
+    [bar.widgets]
+    auto_hide = true
+    capsule = true
+    center = [ "clock" ]
+    end = [ "tray", "cpu", "temp", "ram", "volume", "battery", "network" ]
+    reserve_space = false
+    start = [ "control-center", "workspaces" ]
+
+[battery]
+warning_threshold = 25
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = false
+
+    [desktop_widgets.widget]
+
+[dock]
+auto_hide = true
+background_opacity = 0.99999997764825821
+cross_axis_padding = 0
+enabled = true
+icon_size = 42
+margin_edge = 0
+reserve_space = false
+shadow = false
+show_dots = true
+
+[idle]
+behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = false
+    timeout = 600
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660
+
+[keybinds]
+cancel = [ "Escape" ]
+down = [ "Ctrl+j" ]
+left = [ "Ctrl+h" ]
+right = [ "Ctrl+l" ]
+up = [ "Ctrl+k" ]
+validate = [ "Return" ]
+
+[location]
+auto_locate = true
+
+[lockscreen]
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 768.0
+    cy = 741.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+[notification]
+position = "top_center"
+
+[shell]
+app_icon_color = "primary"
+avatar_path = "/home/humenbeing/Pictures/Screenshots/Screenshot from 2026-05-19 19-54-13.png"
+clipboard_auto_paste = "off"
+font_family = "JetBrainsMono NF"
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+
+    [shell.panel]
+    control_center_placement = "floating"
+    launcher_categories = false
+    launcher_compact = true
+    launcher_session_search = true
+    session_placement = "floating"
+    shadow = false
+    transparency_mode = "soft"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Catppuccin Lavender"
+custom_palette = "dark-jungle-ts"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+[wallpaper.default]
+path = "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg"
+
+[wallpaper.last]
+path = "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/humenbeing/itslinux-btw/assets/Wallpapers/dark_jungle.jpg"
+
+[widget.clock]
+capsule_radius = 11
+
+[widget.control-center]
+glyph = "arrow-big-right-filled"
+
+[widget.cpu]
+display = "text"
+
+[widget.network]
+show_label = false
+
+[widget.ram]
+display = "text"
+
+[widget.temp]
+display = "text"
