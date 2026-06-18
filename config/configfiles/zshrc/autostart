@@ -1,5 +1,0 @@
-# -----------------------------------------------------
-# AUTOSTART
-# -----------------------------------------------------
-plugins=(sudo zsh-autosuggestions zsh-syntax-highlighting)
-
