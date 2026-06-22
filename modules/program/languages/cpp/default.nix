@@ -6,5 +6,7 @@ let
 in {
   environment.systemPackages = [
     clang
+    pkgs.clang-tools
+    pkgs.gcc
   ];
 }
