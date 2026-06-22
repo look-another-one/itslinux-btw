@@ -20,6 +20,7 @@
     ../../modules/program/media/nemo/default.nix
     ../../modules/program/cli/starship/default.nix
     ../../modules/program/editor/neovim/default.nix
+    ../../modules/program/editor/cursor/default.nix
     ../../modules/core/theme.nix
     ../../modules/program/theme/noctalia/default.nix
     ../../modules/program/cli/yazi/default.nix
