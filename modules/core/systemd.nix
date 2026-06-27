@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ lib, ... }:
 
 {
   systemd.services.systemd-networkd-wait-online.enable = false;

@@ -1,4 +1,4 @@
-{ config, pkgs, lib, vars, ... }:
+{ pkgs, vars, ... }:
 
 let
   nodeVersion = "nodejs_${vars.languages.nodejs}";

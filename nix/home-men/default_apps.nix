@@ -1,4 +1,4 @@
-{ pkgs, vars, ... }:
+{ vars, ... }:
 
 let
   browserDesktop = if vars.browser == "brave" then "brave-browser.desktop" else "${vars.browser}.desktop";
