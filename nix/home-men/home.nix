@@ -8,6 +8,7 @@
   imports = [
     ./default_apps.nix
     ../../modules/program/browser/brave/default.nix
+    ../../modules/program/browser/zen-browser/default.nix
     ../../modules/program/cli/btop/default.nix
     ../../modules/program/cli/fastfetch/default.nix
     ../../modules/program/editor/vscodium/default.nix
