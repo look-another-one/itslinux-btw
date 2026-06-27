@@ -21,6 +21,7 @@
     ../../modules/core/audio.nix
     ../../modules/core/disk.nix
     ../../modules/core/fonts.nix
+    ../../modules/core/virtualisation.nix
     #################################################################
     ###                         Programs                          ### 
     #################################################################
