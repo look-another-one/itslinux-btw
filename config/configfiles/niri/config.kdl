@@ -24,10 +24,6 @@ input {
 
 layout {
     gaps 8
-
-    struts {
-        top 20
-    }
     background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
