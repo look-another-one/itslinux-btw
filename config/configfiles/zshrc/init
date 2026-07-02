@@ -6,6 +6,14 @@
 # Exports
 # -----------------------------------------------------
 export EDITOR=nvim
+# Global .env file
+ENV_FILE="$HOME/.env"
+
+if [[ -f "$ENV_FILE" ]]; then
+    set -a
+    source "$ENV_FILE"
+    set +a
+fi
 
 # -----------------------------------------------------
 # Alias 
