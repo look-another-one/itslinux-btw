@@ -4,8 +4,8 @@
     isNormalUser = true;
     description = user.description;
     extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
-    packages = with pkgs; [ zsh ];
-    shell = pkgs.zsh;
+    packages = with pkgs; [ nushell ];
+    shell = pkgs.nushell;
   };
 
   home-manager.users.${user.username} = {
