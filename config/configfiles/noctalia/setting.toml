@@ -44,7 +44,7 @@ order = [ "widgets" ]
     scale = 1.0
     shadow = true
     start = [ "control-center", "workspaces", "active_window" ]
-    thickness = 45
+    thickness = 34
     widget_spacing = 6
 
         [[bar.widgets.capsule_group]]
@@ -637,5 +637,4 @@ type = "tray"
 
 [widget.volume]
 color = "error"
-show_label = false
 type = "volume"
