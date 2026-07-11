@@ -32,6 +32,7 @@ order = [ "widgets" ]
     layer = "top"
     margin_edge = 10
     margin_ends = 20
+    margin_opposite_edge = 0
     padding = 19
     panel_overlap = 1
     position = "top"
@@ -43,9 +44,17 @@ order = [ "widgets" ]
     reserve_space = true
     scale = 1.0
     shadow = false
+    show_on_workspace_switch = true
     start = [ "control-center", "workspaces", "active_window" ]
     thickness = 34
     widget_spacing = 6
+
+        [bar.widgets.dead_zone]
+        command = ""
+        middle_command = ""
+        right_command = ""
+        scroll_down_command = ""
+        scroll_up_command = ""
 
         [[bar.widgets.capsule_group]]
         fill = "surface_variant"
@@ -86,6 +95,7 @@ warning_threshold = 25
 enable_ddcutil = false
 ignore_mmids = []
 minimum_brightness = 0.0
+sync_all_monitors = false
 
 [calendar]
 enabled = true
@@ -101,8 +111,10 @@ refresh_minutes = 5
     username = ""
 
 [control_center]
+hidden_tabs = []
 sidebar = "compact"
 sidebar_section = "compact"
+width = 700
 
     [[control_center.shortcuts]]
     type = "wifi"
@@ -120,7 +132,7 @@ sidebar_section = "compact"
     type = "mic_mute"
 
 [desktop_widgets]
-enabled = true
+enabled = false
 schema_version = 2
 
     [desktop_widgets.grid]
@@ -140,6 +152,8 @@ icon_size = 48
 inactive_opacity = 0.85000002384185791
 inactive_scale = 0.85000002384185791
 item_spacing = 6
+launcher_custom_image = ""
+launcher_custom_image_colorize = false
 launcher_icon = "grid-dots"
 launcher_position = "none"
 magnification = true
@@ -188,29 +202,31 @@ pre_action_fade_seconds = 2.0
     [idle.behavior.lock]
     action = "lock"
     command = ""
-    enabled = false
+    enabled = true
     resume_command = ""
-    timeout = 600
+    timeout = 600.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
     command = ""
     enabled = false
     resume_command = ""
-    timeout = 900
+    timeout = 900.0
 
     [idle.behavior.screen-off]
     action = "screen_off"
     command = ""
     enabled = false
     resume_command = ""
-    timeout = 660
+    timeout = 660.0
 
 [keybinds]
 cancel = [ "Escape" ]
 down = [ "Ctrl+j" ]
 left = [ "Ctrl+h" ]
 right = [ "Ctrl+l" ]
+tab_next = [ "Tab" ]
+tab_previous = [ "Shift+ISO_Left_Tab" ]
 up = [ "Ctrl+k" ]
 validate = [ "Return" ]
 
@@ -231,9 +247,16 @@ tint_intensity = 0.0
 wallpaper = ""
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1" ]
+widget_order = [
+    "lockscreen-login-box@winit",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -241,8 +264,8 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "loc
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
-    box_height = 0.0
-    box_width = 0.0
+    box_height = 70.0
+    box_width = 400.0
     cx = 683.0
     cy = 645.0
     enabled = true
@@ -256,11 +279,14 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "loc
         background_radius = 12.0
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_password_hint = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 0.0
-    box_width = 0.0
+    box_height = 70.0
+    box_width = 400.0
     cx = 768.0
     cy = 741.0
     enabled = true
@@ -274,11 +300,14 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "loc
         background_radius = 12.0
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_password_hint = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@winit"]
-    box_height = 0.0
-    box_width = 0.0
+    box_height = 70.0
+    box_width = 400.0
     cx = 473.0
     cy = 912.0
     enabled = true
@@ -292,7 +321,51 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "loc
         background_radius = 12.0
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_password_hint = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 768.0
+    cy = 641.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 156.0
+    cy = 257.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        show_label = true
+        stat = "ram_pct"
+        stat2 = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 156.0
+    cy = 111.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
 
 [nightlight]
 enabled = false
@@ -320,6 +393,7 @@ offset_x = 20
 offset_y = 8
 orientation = "horizontal"
 position = "top_center"
+position_vertical = "top_center"
 scale = 1.0
 
     [osd.kinds]
@@ -330,7 +404,9 @@ scale = 1.0
     keyboard_layout = true
     lock_keys = true
     media = false
+    nightlight = true
     power_profile = true
+    privacy = true
     volume = true
     volume_input = true
     volume_output = true
@@ -341,14 +417,14 @@ enabled = []
 
     [[plugins.source]]
     auto_update = false
-    enabled = true
+    enabled = false
     kind = "git"
     location = "https://github.com/noctalia-dev/official-plugins"
     name = "official"
 
     [[plugins.source]]
     auto_update = false
-    enabled = true
+    enabled = false
     kind = "git"
     location = "https://github.com/noctalia-dev/community-plugins"
     name = "community"
@@ -367,6 +443,7 @@ date_format = "%A, %x"
 disable_mipmaps = false
 font_family = "JetBrainsMono NF"
 launch_apps_as_systemd_services = false
+launch_apps_custom_command = ""
 middle_click_opens_widget_settings = true
 niri_overview_type_to_launch_enabled = false
 offline_mode = false
@@ -385,35 +462,55 @@ ui_scale = 1.0
     enabled = true
     speed = 1.0
 
+    [shell.greeter_sync]
+    auto_sync = false
+
+    [shell.launcher]
+    app_grid = false
+    categories = false
+    compact = true
+    session_search = false
+    show_icons = true
+    sort_by_usage = true
+
+        [shell.launcher.dmenu]
+
     [shell.mpris]
     blacklist = []
 
     [shell.panel]
     borders = true
-    clipboard_placement = "centered"
+    clipboard_placement = "floating"
+    clipboard_position = "center"
     control_center_placement = "floating"
+    control_center_position = "auto"
     floating_offset = 8
-    launcher_categories = false
-    launcher_compact = true
-    launcher_placement = "centered"
-    launcher_session_search = true
-    launcher_show_icons = true
-    launcher_sort_by_usage = true
+    launcher_placement = "floating"
+    launcher_position = "center"
     open_near_click_clipboard = false
     open_near_click_control_center = false
     open_near_click_launcher = false
     open_near_click_session = false
     open_near_click_wallpaper = false
+    polkit_placement = "floating"
+    polkit_position = "center"
     session_placement = "floating"
+    session_position = "auto"
     shadow = false
     transparency_mode = "glass"
     wallpaper_placement = "floating"
+    wallpaper_position = "auto"
+
+    [shell.privacy]
+    cam_filter_regex = ""
+    mic_filter_regex = ""
 
     [shell.screen_corners]
     enabled = false
     size = 32
 
     [shell.screenshot]
+    confirm_region = false
     copy_to_clipboard = true
     directory = ""
     filename_pattern = ""
@@ -427,6 +524,7 @@ ui_scale = 1.0
     [[shell.session.actions]]
     action = "lock"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
@@ -436,6 +534,7 @@ ui_scale = 1.0
     [[shell.session.actions]]
     action = "logout"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
@@ -445,6 +544,7 @@ ui_scale = 1.0
     [[shell.session.actions]]
     action = "lock_and_suspend"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
@@ -454,6 +554,7 @@ ui_scale = 1.0
     [[shell.session.actions]]
     action = "reboot"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
@@ -463,11 +564,12 @@ ui_scale = 1.0
     [[shell.session.actions]]
     action = "shutdown"
     command = ""
+    countdown_seconds = 0.0
     enabled = true
     glyph = ""
     label = ""
     shortcut = "5"
-    variant = "destructive"
+    variant = "default"
 
     [shell.shadow]
     alpha = 0.55000001192092896
@@ -505,10 +607,10 @@ swap_pct_critical_threshold = 80.0
 [theme]
 builtin = "Noctalia"
 community_palette = "Catppuccin Lavender"
-custom_palette = "dark-jungle-ts"
+custom_palette = ""
 mode = "dark"
-source = "custom"
-wallpaper_scheme = "dysfunctional"
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
     builtin_ids = []
