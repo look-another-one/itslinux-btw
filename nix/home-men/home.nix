@@ -20,6 +20,7 @@
     ../../modules/program/media/localsend/default.nix
     ../../modules/program/media/keepassxc/default.nix
     ../../modules/program/media/nemo/default.nix
+    ../../modules/program/media/mpv/default.nix
     ../../modules/program/cli/starship/default.nix
     ../../modules/program/editor/neovim/default.nix
     ../../modules/program/editor/cursor/default.nix
