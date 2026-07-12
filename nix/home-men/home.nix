@@ -14,6 +14,7 @@
     ../../modules/program/cli/fastfetch/default.nix
     ../../modules/program/editor/vscodium/default.nix
     ../../modules/program/shell/nushell/default.nix
+    ../../modules/program/shell/bash/default.nix
     ../../modules/program/editor/antigravity/default.nix
     ../../modules/program/cli/kitty/default.nix
     ../../modules/program/dev/android-tools/default.nix
