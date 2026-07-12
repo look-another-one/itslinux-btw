@@ -29,13 +29,15 @@
     extraConfig = ''
   $env.config.show_banner = false
   $env.config.buffer_editor = "nvim" 
-  $env.config.keybindings ++= [{
-    name: delete_one_word_backward
-    modifier: control
-    keycode: backspace
-    mode: [emacs, vi_insert]
-    event: { edit: backspaceword }
-}]
+  $env.config.keybindings = (
+    $env.config.keybindings | append {
+        name: ctrl-backspace
+        modifier: control
+        keycode: char_h
+        mode: [emacs vi_insert]
+        event: { edit: BackspaceWord }
+    }
+)
 	'';
   };
 }
