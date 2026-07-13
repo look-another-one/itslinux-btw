@@ -40,6 +40,7 @@
     # ---------------- Dev --------------
     ../../modules/program/dev/ollama/default.nix
     ../../modules/program/dev/mysql/default.nix
+    ../../modules/program/editor/zed/default.nix
     #################################################################
     ###                         Packages                          ### 
     #################################################################
