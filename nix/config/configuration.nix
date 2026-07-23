@@ -28,7 +28,7 @@
     ../../modules/program/cli/keyd/default.nix
     ../../modules/program/cli/lazygit/default.nix
     ../../modules/program/media/obs-studio/default.nix
-    ../../modules/program/electronics/kicad/deault.nix
+    ../../modules/program/electronics/kicad/default.nix
     # ---------------- Editor --------------
     # Moved to home-manager level to support declarative extensions
     # ---------------- Desktop Enviroment --------------
