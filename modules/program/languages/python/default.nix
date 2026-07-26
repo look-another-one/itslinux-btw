@@ -11,8 +11,10 @@ in {
   environment.systemPackages = [
     pythonWithPip   
     pkgs.uv        
-    pkgs.conda         
-  ];
+    pkgs.conda
+    pkgs.ty
+    pkgs.ruff
+];
 
   environment.shellAliases = {
     python = "python${lib.substring 0 1 pythonVersion}.${lib.substring 1 2 pythonVersion}";
