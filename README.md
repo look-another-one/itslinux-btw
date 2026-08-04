@@ -1,3 +1,8 @@
+> [!WARNING]
+> It's been 5 month using this config and i don't even have good understanding of nix, just because i use to write code with ai without understanding it. So i rewrite my whole config myself and this repo is ended.
+> Check new [repo](https://github.com/look-another-one/itsnixos-btw)!
+
+
 <div align="center">
   <h1>❄️ itslinux-btw Dotfiles</h1>
   <p>A modular, reproducible, and aesthetic NixOS configuration managed with Flakes and Home Manager.</p>
